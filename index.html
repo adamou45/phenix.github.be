@@ -1,0 +1,4518 @@
+<!DOCTYPE html>
+<html lang="fr-BE">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="FENIX Properties - Agence immobilière premium à Bruxelles. Achat, vente, location de biens immobiliers d'exception en région bruxelloise. Estimation gratuite.">
+<meta name="keywords" content="immobilier Bruxelles, agence immobilière Bruxelles, acheter appartement Bruxelles, louer maison Bruxelles, investissement immobilier Bruxelles">
+<meta property="og:title" content="FENIX Properties | Immobilier Premium à Bruxelles">
+<meta property="og:description" content="Agence immobilière d'excellence au cœur de Bruxelles. Découvrez nos biens premium.">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://fenixproperties.be">
+<title>FENIX Properties | Immobilier Premium à Bruxelles</title>
+<link rel="preconnect" href="https://fonts.bunny.net">
+<link href="https://fonts.bunny.net/css?family=inter:300,400,500,600,700,800,900|poppins:300,400,500,600,700,800|manrope:400,500,600,700" rel="stylesheet">
+<style>
+:root {
+--white: #FFFFFF;
+--black: #0A0A0A;
+--gray-50: #FAFAFA;
+--gray-100: #F5F5F5;
+--gray-200: #E5E5E5;
+--gray-300: #D4D4D4;
+--gray-400: #A3A3A3;
+--gray-500: #737373;
+--gray-600: #525252;
+--gray-700: #404040;
+--gray-800: #262626;
+--gray-900: #171717;
+--blue-900: #0C1A3A;
+--blue-800: #112240;
+--blue-700: #1A365D;
+--gold: #C9A84C;
+--gold-light: #D4B96A;
+--gold-dark: #B8942F;
+--gold-glow: rgba(201, 168, 76, 0.15);
+--shadow-sm: 0 1px 2px rgba(0,0,0,0.05);
+--shadow-md: 0 4px 6px -1px rgba(0,0,0,0.07), 0 2px 4px -2px rgba(0,0,0,0.05);
+--shadow-lg: 0 10px 15px -3px rgba(0,0,0,0.08), 0 4px 6px -4px rgba(0,0,0,0.04);
+--shadow-xl: 0 20px 25px -5px rgba(0,0,0,0.08), 0 8px 10px -6px rgba(0,0,0,0.04);
+--shadow-2xl: 0 25px 50px -12px rgba(0,0,0,0.15);
+--radius-sm: 8px;
+--radius-md: 12px;
+--radius-lg: 16px;
+--radius-xl: 24px;
+--radius-full: 9999px;
+--transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+--transition-slow: all 0.5s cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+* { margin: 0; padding: 0; box-sizing: border-box; }
+
+html {
+scroll-behavior: smooth;
+font-size: 16px;
+}
+
+body {
+font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+color: var(--gray-900);
+background: var(--white);
+line-height: 1.6;
+overflow-x: hidden;
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+h1, h2, h3, h4, h5, h6 {
+font-family: 'Poppins', sans-serif;
+font-weight: 600;
+line-height: 1.2;
+}
+
+.manrope { font-family: 'Manrope', sans-serif; }
+
+.container {
+max-width: 1280px;
+margin: 0 auto;
+padding: 0 24px;
+}
+
+@media (max-width: 768px) {
+.container { padding: 0 16px; }
+}
+
+/* ===== SCROLLBAR ===== */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: var(--gray-100); }
+::-webkit-scrollbar-thumb { background: var(--gray-400); border-radius: 4px; }
+::-webkit-scrollbar-thumb:hover { background: var(--gold); }
+
+/* ===== ANIMATIONS ===== */
+@keyframes fadeInUp {
+from { opacity: 0; transform: translateY(30px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+from { opacity: 0; transform: translateY(-20px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeIn {
+from { opacity: 0; }
+to { opacity: 1; }
+}
+
+@keyframes slideInLeft {
+from { opacity: 0; transform: translateX(-40px); }
+to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes slideInRight {
+from { opacity: 0; transform: translateX(40px); }
+to { opacity: 1; transform: translateX(0); }
+}
+
+@keyframes scaleIn {
+from { opacity: 0; transform: scale(0.9); }
+to { opacity: 1; transform: scale(1); }
+}
+
+@keyframes pulse {
+0%, 100% { transform: scale(1); }
+50% { transform: scale(1.05); }
+}
+
+@keyframes shimmer {
+0% { background-position: -200% 0; }
+100% { background-position: 200% 0; }
+}
+
+@keyframes float {
+0%, 100% { transform: translateY(0px); }
+50% { transform: translateY(-10px); }
+}
+
+@keyframes gradientMove {
+0% { background-position: 0% 50%; }
+50% { background-position: 100% 50%; }
+100% { background-position: 0% 50%; }
+}
+
+@keyframes countUp {
+from { opacity: 0; transform: translateY(10px); }
+to { opacity: 1; transform: translateY(0); }
+}
+
+.animate-on-scroll {
+opacity: 0;
+transform: translateY(30px);
+transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.animate-on-scroll.visible {
+opacity: 1;
+transform: translateY(0);
+}
+
+/* ===== NAVBAR ===== */
+.navbar {
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+z-index: 1000;
+background: rgba(255,255,255,0.85);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border-bottom: 1px solid rgba(0,0,0,0.06);
+transition: var(--transition);
+padding: 0;
+}
+
+.navbar.scrolled {
+background: rgba(255,255,255,0.95);
+box-shadow: var(--shadow-md);
+}
+
+.navbar-inner {
+display: flex;
+align-items: center;
+justify-content: space-between;
+height: 72px;
+max-width: 1400px;
+margin: 0 auto;
+padding: 0 32px;
+}
+
+@media (max-width: 768px) {
+.navbar-inner { padding: 0 16px; height: 64px; }
+}
+
+.logo {
+display: flex;
+align-items: center;
+gap: 10px;
+text-decoration: none;
+color: var(--black);
+font-family: 'Poppins', sans-serif;
+font-weight: 800;
+font-size: 1.5rem;
+letter-spacing: -0.5px;
+}
+
+.logo-icon {
+width: 40px;
+height: 40px;
+background: linear-gradient(135deg, var(--blue-900), var(--blue-700));
+border-radius: 10px;
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--gold);
+font-size: 1.2rem;
+font-weight: 900;
+}
+
+.logo-text span {
+color: var(--gold);
+}
+
+.nav-links {
+display: flex;
+align-items: center;
+gap: 32px;
+list-style: none;
+}
+
+.nav-links a {
+text-decoration: none;
+color: var(--gray-700);
+font-size: 0.9rem;
+font-weight: 500;
+transition: var(--transition);
+position: relative;
+padding: 4px 0;
+}
+
+.nav-links a::after {
+content: '';
+position: absolute;
+bottom: -2px;
+left: 0;
+width: 0;
+height: 2px;
+background: var(--gold);
+transition: var(--transition);
+}
+
+.nav-links a:hover { color: var(--black); }
+.nav-links a:hover::after { width: 100%; }
+.nav-links a.active { color: var(--black); }
+.nav-links a.active::after { width: 100%; }
+
+.nav-actions {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.btn {
+display: inline-flex;
+align-items: center;
+justify-content: center;
+gap: 8px;
+padding: 10px 24px;
+border-radius: var(--radius-full);
+font-weight: 600;
+font-size: 0.875rem;
+text-decoration: none;
+border: none;
+cursor: pointer;
+transition: var(--transition);
+font-family: 'Inter', sans-serif;
+white-space: nowrap;
+}
+
+.btn-primary {
+background: var(--blue-900);
+color: var(--white);
+}
+
+.btn-primary:hover {
+background: var(--blue-800);
+transform: translateY(-1px);
+box-shadow: var(--shadow-lg);
+}
+
+.btn-gold {
+background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+color: var(--white);
+}
+
+.btn-gold:hover {
+transform: translateY(-1px);
+box-shadow: 0 4px 15px rgba(201, 168, 76, 0.4);
+}
+
+.btn-outline {
+background: transparent;
+color: var(--gray-700);
+border: 1.5px solid var(--gray-300);
+}
+
+.btn-outline:hover {
+border-color: var(--black);
+color: var(--black);
+background: var(--gray-50);
+}
+
+.btn-ghost {
+background: transparent;
+color: var(--gray-700);
+padding: 10px 16px;
+}
+
+.btn-ghost:hover {
+color: var(--black);
+background: var(--gray-100);
+}
+
+.btn-lg {
+padding: 14px 32px;
+font-size: 0.95rem;
+}
+
+.btn-sm {
+padding: 8px 16px;
+font-size: 0.8rem;
+}
+
+.btn-white {
+background: var(--white);
+color: var(--black);
+}
+
+.btn-white:hover {
+background: var(--gray-50);
+transform: translateY(-1px);
+box-shadow: var(--shadow-lg);
+}
+
+/* Hamburger */
+.hamburger {
+display: none;
+flex-direction: column;
+gap: 5px;
+cursor: pointer;
+padding: 8px;
+border: none;
+background: none;
+z-index: 1001;
+}
+
+.hamburger span {
+width: 24px;
+height: 2px;
+background: var(--black);
+transition: var(--transition);
+border-radius: 2px;
+}
+
+.hamburger.active span:nth-child(1) { transform: rotate(45deg) translate(5px, 5px); }
+.hamburger.active span:nth-child(2) { opacity: 0; }
+.hamburger.active span:nth-child(3) { transform: rotate(-45deg) translate(5px, -5px); }
+
+@media (max-width: 1024px) {
+.hamburger { display: flex; }
+.nav-links { display: none; }
+}
+
+.mobile-menu {
+display: none;
+position: fixed;
+top: 0;
+left: 0;
+right: 0;
+bottom: 0;
+background: var(--white);
+z-index: 999;
+padding: 100px 32px 32px;
+flex-direction: column;
+gap: 8px;
+overflow-y: auto;
+}
+
+.mobile-menu.active { display: flex; }
+
+.mobile-menu a {
+display: block;
+padding: 16px 0;
+text-decoration: none;
+color: var(--gray-800);
+font-size: 1.1rem;
+font-weight: 500;
+border-bottom: 1px solid var(--gray-100);
+transition: var(--transition);
+}
+
+.mobile-menu a:hover { color: var(--gold); padding-left: 8px; }
+
+.mobile-menu-actions {
+display: flex;
+flex-direction: column;
+gap: 12px;
+margin-top: 24px;
+}
+
+/* ===== HERO ===== */
+.hero {
+position: relative;
+min-height: 100vh;
+display: flex;
+align-items: center;
+overflow: hidden;
+background: var(--blue-900);
+}
+
+.hero-bg {
+position: absolute;
+inset: 0;
+background: url('https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13c9dba3e-8a31-4382-9eaa-507759b99244.png') center/cover no-repeat;
+opacity: 0.35;
+}
+
+.hero-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(135deg, rgba(12, 26, 58, 0.85) 0%, rgba(12, 26, 58, 0.6) 50%, rgba(12, 26, 58, 0.4) 100%);
+}
+
+.hero-content {
+position: relative;
+z-index: 2;
+width: 100%;
+padding: 120px 0 60px;
+}
+
+.hero-badge {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+background: rgba(201, 168, 76, 0.15);
+border: 1px solid rgba(201, 168, 76, 0.3);
+color: var(--gold-light);
+padding: 8px 20px;
+border-radius: var(--radius-full);
+font-size: 0.8rem;
+font-weight: 600;
+letter-spacing: 0.5px;
+text-transform: uppercase;
+margin-bottom: 24px;
+animation: fadeInDown 0.8s ease;
+}
+
+.hero-badge svg { width: 16px; height: 16px; }
+
+.hero h1 {
+font-size: clamp(2.5rem, 6vw, 4.5rem);
+color: var(--white);
+font-weight: 800;
+line-height: 1.1;
+margin-bottom: 20px;
+letter-spacing: -1px;
+animation: fadeInUp 0.8s ease 0.2s both;
+}
+
+.hero h1 .gold { color: var(--gold); }
+
+.hero-subtitle {
+font-size: clamp(1rem, 2vw, 1.2rem);
+color: rgba(255,255,255,0.7);
+max-width: 600px;
+margin-bottom: 40px;
+font-weight: 400;
+line-height: 1.7;
+animation: fadeInUp 0.8s ease 0.4s both;
+}
+
+.hero-stats {
+display: flex;
+gap: 48px;
+margin-bottom: 48px;
+animation: fadeInUp 0.8s ease 0.5s both;
+}
+
+.hero-stat {
+text-align: left;
+}
+
+.hero-stat-number {
+font-size: 2rem;
+font-weight: 800;
+color: var(--white);
+font-family: 'Poppins', sans-serif;
+}
+
+.hero-stat-number .gold { color: var(--gold); }
+
+.hero-stat-label {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.5);
+font-weight: 500;
+}
+
+/* Search Box */
+.search-box {
+background: rgba(255,255,255,0.1);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border: 1px solid rgba(255,255,255,0.15);
+border-radius: var(--radius-xl);
+padding: 8px;
+max-width: 900px;
+animation: fadeInUp 0.8s ease 0.6s both;
+}
+
+.search-tabs {
+display: flex;
+gap: 4px;
+margin-bottom: 8px;
+padding: 4px;
+}
+
+.search-tab {
+padding: 8px 20px;
+border-radius: var(--radius-full);
+font-size: 0.85rem;
+font-weight: 600;
+cursor: pointer;
+transition: var(--transition);
+color: rgba(255,255,255,0.6);
+background: transparent;
+border: none;
+font-family: 'Inter', sans-serif;
+}
+
+.search-tab.active {
+background: var(--white);
+color: var(--black);
+}
+
+.search-tab:hover:not(.active) {
+color: var(--white);
+background: rgba(255,255,255,0.1);
+}
+
+.search-fields {
+display: grid;
+grid-template-columns: 1fr 1fr 1fr auto;
+gap: 8px;
+align-items: center;
+}
+
+.search-field {
+position: relative;
+}
+
+.search-field label {
+display: block;
+font-size: 0.7rem;
+color: rgba(255,255,255,0.5);
+font-weight: 600;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+margin-bottom: 4px;
+padding-left: 16px;
+}
+
+.search-field input,
+.search-field select {
+width: 100%;
+padding: 14px 16px;
+border: none;
+border-radius: var(--radius-md);
+background: rgba(255,255,255,0.1);
+color: var(--white);
+font-size: 0.9rem;
+font-family: 'Inter', sans-serif;
+transition: var(--transition);
+}
+
+.search-field input::placeholder { color: rgba(255,255,255,0.4); }
+.search-field select { color: rgba(255,255,255,0.7); }
+.search-field select option { background: var(--blue-900); color: var(--white); }
+
+.search-field input:focus,
+.search-field select:focus {
+outline: none;
+background: rgba(255,255,255,0.15);
+}
+
+.search-btn {
+padding: 14px 32px;
+background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+color: var(--white);
+border: none;
+border-radius: var(--radius-md);
+font-weight: 700;
+font-size: 0.95rem;
+cursor: pointer;
+transition: var(--transition);
+display: flex;
+align-items: center;
+gap: 8px;
+font-family: 'Inter', sans-serif;
+height: 52px;
+margin-top: 16px;
+}
+
+.search-btn:hover {
+transform: translateY(-2px);
+box-shadow: 0 8px 25px rgba(201, 168, 76, 0.4);
+}
+
+@media (max-width: 768px) {
+.search-fields {
+grid-template-columns: 1fr;
+}
+.hero-stats { gap: 24px; flex-wrap: wrap; }
+.hero-stat-number { font-size: 1.5rem; }
+.search-btn { width: 100%; justify-content: center; }
+}
+
+/* ===== SECTIONS ===== */
+.section {
+padding: 100px 0;
+}
+
+.section-header {
+text-align: center;
+margin-bottom: 60px;
+}
+
+.section-label {
+display: inline-flex;
+align-items: center;
+gap: 8px;
+color: var(--gold);
+font-size: 0.8rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 2px;
+margin-bottom: 16px;
+}
+
+.section-label::before,
+.section-label::after {
+content: '';
+width: 24px;
+height: 1px;
+background: var(--gold);
+}
+
+.section-title {
+font-size: clamp(2rem, 4vw, 3rem);
+color: var(--black);
+font-weight: 700;
+margin-bottom: 16px;
+letter-spacing: -0.5px;
+}
+
+.section-subtitle {
+font-size: 1.1rem;
+color: var(--gray-500);
+max-width: 600px;
+margin: 0 auto;
+}
+
+/* ===== MESSAGE SECTION ===== */
+.message-section {
+background: var(--gray-50);
+padding: 80px 0;
+}
+
+.message-card {
+max-width: 900px;
+margin: 0 auto;
+background: var(--white);
+border-radius: var(--radius-xl);
+padding: 48px;
+box-shadow: var(--shadow-xl);
+border: 1px solid var(--gray-100);
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.message-card::before {
+content: '';
+position: absolute;
+top: 0;
+left: 0;
+right: 0;
+height: 4px;
+background: linear-gradient(90deg, var(--gold), var(--gold-dark), var(--gold));
+}
+
+.message-card .quote-icon {
+font-size: 3rem;
+color: var(--gold);
+opacity: 0.3;
+margin-bottom: 16px;
+font-family: serif;
+}
+
+.message-text {
+font-size: 1.05rem;
+color: var(--gray-700);
+line-height: 1.9;
+font-style: italic;
+}
+
+.message-text strong {
+color: var(--black);
+font-style: normal;
+}
+
+@media (max-width: 768px) {
+.message-card { padding: 32px 24px; }
+}
+
+/* ===== PROPERTY CARDS ===== */
+.properties-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+
+@media (max-width: 1024px) {
+.properties-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.properties-grid { grid-template-columns: 1fr; }
+}
+
+.property-card {
+background: var(--white);
+border-radius: var(--radius-lg);
+overflow: hidden;
+transition: var(--transition);
+border: 1px solid var(--gray-100);
+cursor: pointer;
+position: relative;
+}
+
+.property-card:hover {
+transform: translateY(-8px);
+box-shadow: var(--shadow-2xl);
+border-color: transparent;
+}
+
+.property-image {
+position: relative;
+height: 240px;
+overflow: hidden;
+}
+
+.property-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.6s ease;
+}
+
+.property-card:hover .property-image img {
+transform: scale(1.05);
+}
+
+.property-badges {
+position: absolute;
+top: 12px;
+left: 12px;
+display: flex;
+gap: 8px;
+flex-wrap: wrap;
+}
+
+.badge {
+padding: 4px 12px;
+border-radius: var(--radius-full);
+font-size: 0.7rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.badge-new {
+background: var(--gold);
+color: var(--white);
+}
+
+.badge-luxury {
+background: var(--blue-900);
+color: var(--white);
+}
+
+.badge-energy {
+background: rgba(255,255,255,0.9);
+color: var(--gray-700);
+font-size: 0.65rem;
+}
+
+.property-favorite {
+position: absolute;
+top: 12px;
+right: 12px;
+width: 36px;
+height: 36px;
+background: rgba(255,255,255,0.9);
+backdrop-filter: blur(10px);
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: var(--transition);
+border: none;
+}
+
+.property-favorite:hover {
+background: var(--white);
+transform: scale(1.1);
+}
+
+.property-favorite.liked svg { fill: #EF4444; color: #EF4444; }
+
+.property-content {
+padding: 20px;
+}
+
+.property-price {
+font-size: 1.4rem;
+font-weight: 800;
+color: var(--black);
+font-family: 'Poppins', sans-serif;
+margin-bottom: 4px;
+}
+
+.property-price .period {
+font-size: 0.8rem;
+font-weight: 400;
+color: var(--gray-500);
+}
+
+.property-title {
+font-size: 0.95rem;
+font-weight: 600;
+color: var(--gray-800);
+margin-bottom: 8px;
+}
+
+.property-location {
+display: flex;
+align-items: center;
+gap: 4px;
+color: var(--gray-500);
+font-size: 0.8rem;
+margin-bottom: 16px;
+}
+
+.property-features {
+display: flex;
+gap: 16px;
+padding-top: 16px;
+border-top: 1px solid var(--gray-100);
+}
+
+.property-feature {
+display: flex;
+align-items: center;
+gap: 6px;
+font-size: 0.8rem;
+color: var(--gray-600);
+}
+
+.property-feature svg {
+width: 16px;
+height: 16px;
+color: var(--gray-400);
+}
+
+/* ===== NEIGHBORHOODS ===== */
+.neighborhoods-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 20px;
+}
+
+@media (max-width: 1024px) {
+.neighborhoods-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.neighborhoods-grid { grid-template-columns: 1fr 1fr; }
+}
+
+.neighborhood-card {
+position: relative;
+height: 280px;
+border-radius: var(--radius-lg);
+overflow: hidden;
+cursor: pointer;
+}
+
+.neighborhood-card img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.6s ease;
+}
+
+.neighborhood-card:hover img { transform: scale(1.08); }
+
+.neighborhood-overlay {
+position: absolute;
+inset: 0;
+background: linear-gradient(to top, rgba(0,0,0,0.7) 0%, transparent 60%);
+display: flex;
+flex-direction: column;
+justify-content: flex-end;
+padding: 24px;
+}
+
+.neighborhood-name {
+color: var(--white);
+font-size: 1.2rem;
+font-weight: 700;
+margin-bottom: 4px;
+}
+
+.neighborhood-count {
+color: rgba(255,255,255,0.7);
+font-size: 0.85rem;
+}
+
+/* ===== SERVICES ===== */
+.services-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 24px;
+}
+
+@media (max-width: 1024px) {
+.services-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.services-grid { grid-template-columns: 1fr; }
+}
+
+.service-card {
+background: var(--white);
+border-radius: var(--radius-lg);
+padding: 32px;
+border: 1px solid var(--gray-100);
+transition: var(--transition);
+text-align: center;
+}
+
+.service-card:hover {
+border-color: var(--gold);
+box-shadow: var(--shadow-lg);
+transform: translateY(-4px);
+}
+
+.service-icon {
+width: 56px;
+height: 56px;
+background: var(--gold-glow);
+border-radius: var(--radius-md);
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 20px;
+color: var(--gold);
+}
+
+.service-title {
+font-size: 1rem;
+font-weight: 700;
+margin-bottom: 8px;
+color: var(--black);
+}
+
+.service-desc {
+font-size: 0.85rem;
+color: var(--gray-500);
+line-height: 1.6;
+}
+
+/* ===== SIMULATOR ===== */
+.simulator-section {
+background: var(--gray-50);
+}
+
+.simulator-container {
+display: grid;
+grid-template-columns: 1fr 1fr;
+gap: 48px;
+align-items: start;
+}
+
+@media (max-width: 768px) {
+.simulator-container { grid-template-columns: 1fr; }
+}
+
+.simulator-card {
+background: var(--white);
+border-radius: var(--radius-xl);
+padding: 40px;
+box-shadow: var(--shadow-xl);
+border: 1px solid var(--gray-100);
+}
+
+.simulator-title {
+font-size: 1.5rem;
+font-weight: 700;
+margin-bottom: 8px;
+color: var(--black);
+}
+
+.simulator-subtitle {
+font-size: 0.9rem;
+color: var(--gray-500);
+margin-bottom: 32px;
+}
+
+.form-group {
+margin-bottom: 24px;
+}
+
+.form-label {
+display: block;
+font-size: 0.8rem;
+font-weight: 600;
+color: var(--gray-700);
+margin-bottom: 8px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.form-input {
+width: 100%;
+padding: 14px 16px;
+border: 1.5px solid var(--gray-200);
+border-radius: var(--radius-md);
+font-size: 0.95rem;
+font-family: 'Inter', sans-serif;
+color: var(--black);
+transition: var(--transition);
+background: var(--white);
+}
+
+.form-input:focus {
+outline: none;
+border-color: var(--gold);
+box-shadow: 0 0 0 3px var(--gold-glow);
+}
+
+.form-select {
+width: 100%;
+padding: 14px 16px;
+border: 1.5px solid var(--gray-200);
+border-radius: var(--radius-md);
+font-size: 0.95rem;
+font-family: 'Inter', sans-serif;
+color: var(--black);
+background: var(--white);
+appearance: none;
+cursor: pointer;
+transition: var(--transition);
+background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='12' viewBox='0 0 12 12'%3E%3Cpath d='M6 8L1 3h10z' fill='%23737373'/%3E%3C/svg%3E");
+background-repeat: no-repeat;
+background-position: right 16px center;
+}
+
+.form-select:focus {
+outline: none;
+border-color: var(--gold);
+box-shadow: 0 0 0 3px var(--gold-glow);
+}
+
+.range-slider {
+width: 100%;
+-webkit-appearance: none;
+height: 6px;
+background: var(--gray-200);
+border-radius: 3px;
+outline: none;
+margin-top: 8px;
+}
+
+.range-slider::-webkit-slider-thumb {
+-webkit-appearance: none;
+width: 20px;
+height: 20px;
+background: var(--gold);
+border-radius: 50%;
+cursor: pointer;
+box-shadow: 0 2px 6px rgba(201, 168, 76, 0.4);
+}
+
+.range-value {
+display: flex;
+justify-content: space-between;
+font-size: 0.8rem;
+color: var(--gray-500);
+margin-top: 8px;
+}
+
+.simulator-result {
+background: linear-gradient(135deg, var(--blue-900), var(--blue-800));
+border-radius: var(--radius-xl);
+padding: 40px;
+color: var(--white);
+}
+
+.result-label {
+font-size: 0.85rem;
+color: rgba(255,255,255,0.6);
+margin-bottom: 8px;
+text-transform: uppercase;
+letter-spacing: 1px;
+font-weight: 600;
+}
+
+.result-amount {
+font-size: 3rem;
+font-weight: 800;
+color: var(--gold);
+font-family: 'Poppins', sans-serif;
+margin-bottom: 24px;
+}
+
+.result-details {
+display: grid;
+gap: 16px;
+}
+
+.result-row {
+display: flex;
+justify-content: space-between;
+padding-bottom: 16px;
+border-bottom: 1px solid rgba(255,255,255,0.1);
+}
+
+.result-row-label {
+font-size: 0.9rem;
+color: rgba(255,255,255,0.7);
+}
+
+.result-row-value {
+font-size: 0.9rem;
+font-weight: 600;
+color: var(--white);
+}
+
+/* ===== REVIEWS ===== */
+.reviews-section {
+background: var(--white);
+}
+
+.reviews-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+margin-bottom: 48px;
+}
+
+@media (max-width: 1024px) {
+.reviews-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.reviews-grid { grid-template-columns: 1fr; }
+}
+
+.review-card {
+background: var(--gray-50);
+border-radius: var(--radius-lg);
+padding: 32px;
+border: 1px solid var(--gray-100);
+transition: var(--transition);
+}
+
+.review-card:hover {
+border-color: var(--gold);
+box-shadow: var(--shadow-md);
+}
+
+.review-stars {
+display: flex;
+gap: 2px;
+margin-bottom: 16px;
+color: var(--gold);
+}
+
+.review-text {
+font-size: 0.95rem;
+color: var(--gray-700);
+line-height: 1.7;
+margin-bottom: 20px;
+font-style: italic;
+}
+
+.review-author {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.review-avatar {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--white);
+font-weight: 700;
+font-size: 1rem;
+}
+
+.review-name {
+font-weight: 600;
+color: var(--black);
+font-size: 0.9rem;
+}
+
+.review-role {
+font-size: 0.8rem;
+color: var(--gray-500);
+}
+
+.review-overall {
+text-align: center;
+margin-bottom: 40px;
+}
+
+.review-overall-score {
+font-size: 4rem;
+font-weight: 800;
+color: var(--black);
+font-family: 'Poppins', sans-serif;
+}
+
+.review-overall-stars {
+color: var(--gold);
+font-size: 1.5rem;
+margin: 8px 0;
+}
+
+.review-overall-count {
+color: var(--gray-500);
+font-size: 0.9rem;
+}
+
+/* ===== BLOG ===== */
+.blog-section {
+background: var(--gray-50);
+}
+
+.blog-grid {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+}
+
+@media (max-width: 1024px) {
+.blog-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.blog-grid { grid-template-columns: 1fr; }
+}
+
+.blog-card {
+background: var(--white);
+border-radius: var(--radius-lg);
+overflow: hidden;
+border: 1px solid var(--gray-100);
+transition: var(--transition);
+cursor: pointer;
+}
+
+.blog-card:hover {
+transform: translateY(-4px);
+box-shadow: var(--shadow-xl);
+}
+
+.blog-image {
+height: 200px;
+overflow: hidden;
+}
+
+.blog-image img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+transition: transform 0.6s ease;
+}
+
+.blog-card:hover .blog-image img { transform: scale(1.05); }
+
+.blog-content {
+padding: 24px;
+}
+
+.blog-category {
+display: inline-block;
+padding: 4px 12px;
+background: var(--gold-glow);
+color: var(--gold-dark);
+font-size: 0.7rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+border-radius: var(--radius-full);
+margin-bottom: 12px;
+}
+
+.blog-title {
+font-size: 1.05rem;
+font-weight: 700;
+color: var(--black);
+margin-bottom: 8px;
+line-height: 1.4;
+}
+
+.blog-excerpt {
+font-size: 0.85rem;
+color: var(--gray-500);
+line-height: 1.6;
+margin-bottom: 16px;
+}
+
+.blog-meta {
+display: flex;
+align-items: center;
+gap: 16px;
+font-size: 0.8rem;
+color: var(--gray-400);
+}
+
+/* ===== FAQ ===== */
+.faq-section {
+background: var(--white);
+}
+
+.faq-container {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.faq-item {
+border: 1px solid var(--gray-100);
+border-radius: var(--radius-md);
+margin-bottom: 12px;
+overflow: hidden;
+transition: var(--transition);
+}
+
+.faq-item:hover {
+border-color: var(--gray-200);
+}
+
+.faq-question {
+display: flex;
+align-items: center;
+justify-content: space-between;
+padding: 20px 24px;
+cursor: pointer;
+background: var(--white);
+border: none;
+width: 100%;
+text-align: left;
+font-size: 0.95rem;
+font-weight: 600;
+color: var(--black);
+font-family: 'Inter', sans-serif;
+transition: var(--transition);
+}
+
+.faq-question:hover { background: var(--gray-50); }
+
+.faq-icon {
+width: 24px;
+height: 24px;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: var(--transition);
+color: var(--gray-400);
+flex-shrink: 0;
+}
+
+.faq-item.active .faq-icon {
+transform: rotate(45deg);
+color: var(--gold);
+}
+
+.faq-answer {
+max-height: 0;
+overflow: hidden;
+transition: max-height 0.4s ease;
+}
+
+.faq-answer-inner {
+padding: 0 24px 20px;
+font-size: 0.9rem;
+color: var(--gray-600);
+line-height: 1.7;
+}
+
+/* ===== STATS ===== */
+.stats-section {
+background: linear-gradient(135deg, var(--blue-900), var(--blue-800));
+padding: 80px 0;
+}
+
+.stats-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 32px;
+}
+
+@media (max-width: 768px) {
+.stats-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.stat-item {
+text-align: center;
+}
+
+.stat-number {
+font-size: 3rem;
+font-weight: 800;
+color: var(--gold);
+font-family: 'Poppins', sans-serif;
+margin-bottom: 8px;
+}
+
+.stat-label {
+font-size: 0.9rem;
+color: rgba(255,255,255,0.6);
+font-weight: 500;
+}
+
+/* ===== CTA SECTION ===== */
+.cta-section {
+background: var(--gray-50);
+padding: 100px 0;
+}
+
+.cta-card {
+background: linear-gradient(135deg, var(--blue-900) 0%, var(--blue-700) 100%);
+border-radius: var(--radius-xl);
+padding: 80px 60px;
+text-align: center;
+position: relative;
+overflow: hidden;
+}
+
+.cta-card::before {
+content: '';
+position: absolute;
+top: -50%;
+right: -20%;
+width: 400px;
+height: 400px;
+background: radial-gradient(circle, rgba(201, 168, 76, 0.1) 0%, transparent 70%);
+border-radius: 50%;
+}
+
+.cta-title {
+font-size: clamp(1.8rem, 3.5vw, 2.5rem);
+color: var(--white);
+font-weight: 800;
+margin-bottom: 16px;
+position: relative;
+}
+
+.cta-subtitle {
+font-size: 1.1rem;
+color: rgba(255,255,255,0.6);
+margin-bottom: 40px;
+position: relative;
+}
+
+.cta-buttons {
+display: flex;
+gap: 16px;
+justify-content: center;
+flex-wrap: wrap;
+position: relative;
+}
+
+@media (max-width: 768px) {
+.cta-card { padding: 48px 24px; }
+}
+
+/* ===== FOOTER ===== */
+.footer {
+background: var(--black);
+color: var(--white);
+padding: 80px 0 0;
+}
+
+.footer-grid {
+display: grid;
+grid-template-columns: 2fr 1fr 1fr 1fr;
+gap: 48px;
+margin-bottom: 60px;
+}
+
+@media (max-width: 1024px) {
+.footer-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+@media (max-width: 640px) {
+.footer-grid { grid-template-columns: 1fr; }
+}
+
+.footer-brand p {
+color: rgba(255,255,255,0.5);
+font-size: 0.9rem;
+line-height: 1.7;
+margin-top: 16px;
+max-width: 300px;
+}
+
+.footer-title {
+font-size: 0.85rem;
+font-weight: 700;
+text-transform: uppercase;
+letter-spacing: 1px;
+color: var(--gold);
+margin-bottom: 20px;
+}
+
+.footer-links {
+list-style: none;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+.footer-links a {
+color: rgba(255,255,255,0.5);
+text-decoration: none;
+font-size: 0.9rem;
+transition: var(--transition);
+}
+
+.footer-links a:hover {
+color: var(--white);
+padding-left: 4px;
+}
+
+.footer-bottom {
+border-top: 1px solid rgba(255,255,255,0.1);
+padding: 24px 0;
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+gap: 16px;
+}
+
+.footer-bottom p {
+color: rgba(255,255,255,0.4);
+font-size: 0.85rem;
+}
+
+/* ===== STICKY MOBILE CTA ===== */
+.mobile-cta {
+display: none;
+position: fixed;
+bottom: 0;
+left: 0;
+right: 0;
+z-index: 998;
+background: rgba(255,255,255,0.95);
+backdrop-filter: blur(20px);
+-webkit-backdrop-filter: blur(20px);
+border-top: 1px solid var(--gray-200);
+padding: 12px 16px;
+gap: 8px;
+}
+
+@media (max-width: 768px) {
+.mobile-cta { display: flex; }
+body { padding-bottom: 72px; }
+}
+
+.mobile-cta-btn {
+flex: 1;
+display: flex;
+align-items: center;
+justify-content: center;
+gap: 6px;
+padding: 12px;
+border-radius: var(--radius-md);
+font-size: 0.8rem;
+font-weight: 600;
+text-decoration: none;
+border: none;
+cursor: pointer;
+font-family: 'Inter', sans-serif;
+transition: var(--transition);
+}
+
+.mobile-cta-call {
+background: var(--blue-900);
+color: var(--white);
+}
+
+.mobile-cta-whatsapp {
+background: #25D366;
+color: var(--white);
+}
+
+.mobile-cta-estimate {
+background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+color: var(--white);
+}
+
+/* ===== FLOATING BUTTONS ===== */
+.floating-buttons {
+position: fixed;
+bottom: 24px;
+right: 24px;
+z-index: 997;
+display: flex;
+flex-direction: column;
+gap: 12px;
+}
+
+@media (max-width: 768px) {
+.floating-buttons { bottom: 80px; }
+}
+
+.float-btn {
+width: 56px;
+height: 56px;
+border-radius: 50%;
+display: flex;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+transition: var(--transition);
+border: none;
+box-shadow: var(--shadow-lg);
+}
+
+.float-btn:hover {
+transform: scale(1.1);
+}
+
+.float-btn-whatsapp {
+background: #25D366;
+color: var(--white);
+}
+
+.float-btn-phone {
+background: var(--blue-900);
+color: var(--white);
+}
+
+.float-btn-chat {
+background: linear-gradient(135deg, var(--gold), var(--gold-dark));
+color: var(--white);
+}
+
+/* ===== CHAT WIDGET ===== */
+.chat-widget {
+position: fixed;
+bottom: 100px;
+right: 24px;
+width: 380px;
+max-height: 500px;
+background: var(--white);
+border-radius: var(--radius-xl);
+box-shadow: var(--shadow-2xl);
+z-index: 999;
+display: none;
+flex-direction: column;
+overflow: hidden;
+border: 1px solid var(--gray-100);
+}
+
+.chat-widget.active { display: flex; }
+
+@media (max-width: 480px) {
+.chat-widget {
+width: calc(100% - 32px);
+right: 16px;
+bottom: 80px;
+max-height: 70vh;
+}
+}
+
+.chat-header {
+background: linear-gradient(135deg, var(--blue-900), var(--blue-800));
+padding: 20px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.chat-header-info {
+display: flex;
+align-items: center;
+gap: 12px;
+}
+
+.chat-avatar {
+width: 40px;
+height: 40px;
+border-radius: 50%;
+background: var(--gold);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--white);
+font-weight: 700;
+}
+
+.chat-header-text h4 {
+color: var(--white);
+font-size: 0.95rem;
+font-weight: 600;
+}
+
+.chat-header-text p {
+color: rgba(255,255,255,0.6);
+font-size: 0.75rem;
+}
+
+.chat-close {
+background: none;
+border: none;
+color: rgba(255,255,255,0.6);
+cursor: pointer;
+padding: 4px;
+}
+
+.chat-close:hover { color: var(--white); }
+
+.chat-messages {
+flex: 1;
+padding: 20px;
+overflow-y: auto;
+display: flex;
+flex-direction: column;
+gap: 12px;
+min-height: 300px;
+}
+
+.chat-message {
+max-width: 80%;
+padding: 12px 16px;
+border-radius: var(--radius-md);
+font-size: 0.9rem;
+line-height: 1.5;
+}
+
+.chat-message.bot {
+background: var(--gray-100);
+color: var(--gray-800);
+align-self: flex-start;
+border-bottom-left-radius: 4px;
+}
+
+.chat-message.user {
+background: var(--blue-900);
+color: var(--white);
+align-self: flex-end;
+border-bottom-right-radius: 4px;
+}
+
+.chat-input-area {
+padding: 16px;
+border-top: 1px solid var(--gray-100);
+display: flex;
+gap: 8px;
+}
+
+.chat-input {
+flex: 1;
+padding: 12px 16px;
+border: 1.5px solid var(--gray-200);
+border-radius: var(--radius-full);
+font-size: 0.9rem;
+font-family: 'Inter', sans-serif;
+outline: none;
+transition: var(--transition);
+}
+
+.chat-input:focus {
+border-color: var(--gold);
+}
+
+.chat-send {
+width: 44px;
+height: 44px;
+border-radius: 50%;
+background: var(--blue-900);
+color: var(--white);
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: var(--transition);
+flex-shrink: 0;
+}
+
+.chat-send:hover { background: var(--blue-800); }
+
+/* ===== MODALS ===== */
+.modal-overlay {
+position: fixed;
+inset: 0;
+background: rgba(0,0,0,0.5);
+backdrop-filter: blur(4px);
+z-index: 2000;
+display: none;
+align-items: center;
+justify-content: center;
+padding: 24px;
+}
+
+.modal-overlay.active { display: flex; }
+
+.modal {
+background: var(--white);
+border-radius: var(--radius-xl);
+max-width: 560px;
+width: 100%;
+max-height: 90vh;
+overflow-y: auto;
+box-shadow: var(--shadow-2xl);
+animation: scaleIn 0.3s ease;
+}
+
+.modal-header {
+padding: 24px 32px;
+border-bottom: 1px solid var(--gray-100);
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.modal-title {
+font-size: 1.3rem;
+font-weight: 700;
+color: var(--black);
+}
+
+.modal-close {
+width: 36px;
+height: 36px;
+border-radius: 50%;
+background: var(--gray-100);
+border: none;
+cursor: pointer;
+display: flex;
+align-items: center;
+justify-content: center;
+transition: var(--transition);
+color: var(--gray-600);
+}
+
+.modal-close:hover { background: var(--gray-200); }
+
+.modal-body {
+padding: 32px;
+}
+
+/* Rating Stars */
+.rating-stars {
+display: flex;
+gap: 8px;
+justify-content: center;
+margin-bottom: 24px;
+}
+
+.rating-star {
+width: 48px;
+height: 48px;
+cursor: pointer;
+transition: var(--transition);
+color: var(--gray-300);
+}
+
+.rating-star:hover,
+.rating-star.active {
+color: var(--gold);
+transform: scale(1.1);
+}
+
+/* ===== PAGES ===== */
+.page { display: none; }
+.page.active { display: block; }
+
+/* ===== FILTER BAR ===== */
+.filter-bar {
+background: var(--white);
+border-radius: var(--radius-lg);
+padding: 24px;
+box-shadow: var(--shadow-lg);
+border: 1px solid var(--gray-100);
+margin-bottom: 32px;
+}
+
+.filter-grid {
+display: grid;
+grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+gap: 16px;
+align-items: end;
+}
+
+.filter-group label {
+display: block;
+font-size: 0.75rem;
+font-weight: 600;
+color: var(--gray-600);
+margin-bottom: 6px;
+text-transform: uppercase;
+letter-spacing: 0.5px;
+}
+
+.filter-group select,
+.filter-group input {
+width: 100%;
+padding: 10px 14px;
+border: 1.5px solid var(--gray-200);
+border-radius: var(--radius-sm);
+font-size: 0.85rem;
+font-family: 'Inter', sans-serif;
+color: var(--black);
+transition: var(--transition);
+background: var(--white);
+}
+
+.filter-group select:focus,
+.filter-group input:focus {
+outline: none;
+border-color: var(--gold);
+}
+
+/* ===== INVESTMENT CHARTS ===== */
+.chart-container {
+background: var(--white);
+border-radius: var(--radius-lg);
+padding: 32px;
+box-shadow: var(--shadow-md);
+border: 1px solid var(--gray-100);
+margin-bottom: 24px;
+}
+
+.chart-bar {
+display: flex;
+align-items: end;
+gap: 12px;
+height: 200px;
+padding: 20px 0;
+}
+
+.chart-bar-item {
+flex: 1;
+display: flex;
+flex-direction: column;
+align-items: center;
+justify-content: flex-end;
+height: 100%;
+}
+
+.chart-bar-fill {
+width: 100%;
+max-width: 60px;
+border-radius: 8px 8px 0 0;
+transition: height 1s ease;
+}
+
+.chart-bar-label {
+font-size: 0.7rem;
+color: var(--gray-500);
+margin-top: 8px;
+text-align: center;
+}
+
+.chart-bar-value {
+font-size: 0.75rem;
+font-weight: 700;
+color: var(--black);
+margin-bottom: 4px;
+}
+
+/* ===== BLOG ARTICLE PAGE ===== */
+.article-content {
+max-width: 800px;
+margin: 0 auto;
+}
+
+.article-content h1 {
+font-size: 2.5rem;
+margin-bottom: 16px;
+color: var(--black);
+}
+
+.article-content .article-meta {
+display: flex;
+gap: 24px;
+margin-bottom: 32px;
+color: var(--gray-500);
+font-size: 0.9rem;
+}
+
+.article-content h2 {
+font-size: 1.5rem;
+margin: 32px 0 16px;
+color: var(--black);
+}
+
+.article-content h3 {
+font-size: 1.2rem;
+margin: 24px 0 12px;
+color: var(--gray-800);
+}
+
+.article-content p {
+margin-bottom: 16px;
+color: var(--gray-700);
+line-height: 1.8;
+}
+
+.article-content ul {
+margin-bottom: 16px;
+padding-left: 24px;
+}
+
+.article-content ul li {
+margin-bottom: 8px;
+color: var(--gray-700);
+line-height: 1.6;
+}
+
+.toc {
+background: var(--gray-50);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-bottom: 32px;
+border-left: 4px solid var(--gold);
+}
+
+.toc h4 {
+font-size: 1rem;
+margin-bottom: 12px;
+color: var(--black);
+}
+
+.toc a {
+display: block;
+color: var(--gray-600);
+text-decoration: none;
+font-size: 0.9rem;
+padding: 4px 0;
+transition: var(--transition);
+}
+
+.toc a:hover { color: var(--gold); padding-left: 8px; }
+
+/* ===== SELL PAGE ===== */
+.sell-hero {
+background: linear-gradient(135deg, var(--blue-900), var(--blue-800));
+padding: 140px 0 80px;
+color: var(--white);
+text-align: center;
+}
+
+.sell-hero h1 {
+font-size: clamp(2rem, 4vw, 3rem);
+margin-bottom: 16px;
+}
+
+.sell-hero p {
+font-size: 1.1rem;
+color: rgba(255,255,255,0.6);
+max-width: 600px;
+margin: 0 auto;
+}
+
+.sell-features {
+display: grid;
+grid-template-columns: repeat(3, 1fr);
+gap: 24px;
+margin-top: 48px;
+}
+
+@media (max-width: 768px) {
+.sell-features { grid-template-columns: 1fr; }
+}
+
+.sell-feature {
+background: rgba(255,255,255,0.05);
+border: 1px solid rgba(255,255,255,0.1);
+border-radius: var(--radius-lg);
+padding: 32px;
+text-align: center;
+}
+
+.sell-feature-icon {
+width: 48px;
+height: 48px;
+background: var(--gold-glow);
+border-radius: var(--radius-md);
+display: flex;
+align-items: center;
+justify-content: center;
+margin: 0 auto 16px;
+color: var(--gold);
+}
+
+.sell-feature h3 {
+color: var(--white);
+font-size: 1rem;
+margin-bottom: 8px;
+}
+
+.sell-feature p {
+color: rgba(255,255,255,0.5);
+font-size: 0.85rem;
+}
+
+/* ===== BREADCRUMBS ===== */
+.breadcrumbs {
+display: flex;
+align-items: center;
+gap: 8px;
+padding: 16px 0;
+font-size: 0.85rem;
+color: var(--gray-500);
+}
+
+.breadcrumbs a {
+color: var(--gray-500);
+text-decoration: none;
+transition: var(--transition);
+}
+
+.breadcrumbs a:hover { color: var(--gold); }
+.breadcrumbs .current { color: var(--black); font-weight: 600; }
+
+/* ===== PROPERTY DETAIL MODAL ===== */
+.property-modal .modal {
+max-width: 900px;
+}
+
+.property-modal .modal-body {
+padding: 0;
+}
+
+.property-detail-images {
+height: 400px;
+overflow: hidden;
+border-radius: var(--radius-xl) var(--radius-xl) 0 0;
+}
+
+.property-detail-images img {
+width: 100%;
+height: 100%;
+object-fit: cover;
+}
+
+.property-detail-content {
+padding: 32px;
+}
+
+.property-detail-price {
+font-size: 2rem;
+font-weight: 800;
+color: var(--black);
+font-family: 'Poppins', sans-serif;
+margin-bottom: 8px;
+}
+
+.property-detail-title {
+font-size: 1.3rem;
+font-weight: 600;
+color: var(--gray-800);
+margin-bottom: 8px;
+}
+
+.property-detail-location {
+color: var(--gray-500);
+font-size: 0.9rem;
+margin-bottom: 24px;
+}
+
+.property-detail-features {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 16px;
+padding: 24px 0;
+border-top: 1px solid var(--gray-100);
+border-bottom: 1px solid var(--gray-100);
+margin-bottom: 24px;
+}
+
+@media (max-width: 768px) {
+.property-detail-features { grid-template-columns: repeat(2, 1fr); }
+}
+
+.detail-feature {
+text-align: center;
+}
+
+.detail-feature-value {
+font-size: 1.2rem;
+font-weight: 700;
+color: var(--black);
+}
+
+.detail-feature-label {
+font-size: 0.8rem;
+color: var(--gray-500);
+}
+
+.property-detail-description {
+font-size: 0.95rem;
+color: var(--gray-600);
+line-height: 1.7;
+margin-bottom: 24px;
+}
+
+.property-detail-actions {
+display: flex;
+gap: 12px;
+flex-wrap: wrap;
+}
+
+/* ===== LOADING ANIMATION ===== */
+.skeleton {
+background: linear-gradient(90deg, var(--gray-100) 25%, var(--gray-200) 50%, var(--gray-100) 75%);
+background-size: 200% 100%;
+animation: shimmer 1.5s infinite;
+border-radius: var(--radius-sm);
+}
+
+/* ===== PAGE TRANSITIONS ===== */
+.page-transition {
+animation: fadeIn 0.4s ease;
+}
+
+/* ===== SCROLL TOP ===== */
+.scroll-top {
+position: fixed;
+bottom: 24px;
+left: 24px;
+width: 44px;
+height: 44px;
+background: var(--white);
+border: 1px solid var(--gray-200);
+border-radius: 50%;
+display: none;
+align-items: center;
+justify-content: center;
+cursor: pointer;
+z-index: 997;
+transition: var(--transition);
+color: var(--gray-600);
+box-shadow: var(--shadow-md);
+}
+
+.scroll-top.visible { display: flex; }
+.scroll-top:hover { background: var(--gray-50); transform: translateY(-2px); }
+
+/* ===== TAB SYSTEM ===== */
+.tabs {
+display: flex;
+gap: 4px;
+background: var(--gray-100);
+padding: 4px;
+border-radius: var(--radius-full);
+width: fit-content;
+margin: 0 auto 40px;
+}
+
+.tab {
+padding: 10px 24px;
+border-radius: var(--radius-full);
+font-size: 0.85rem;
+font-weight: 600;
+cursor: pointer;
+transition: var(--transition);
+color: var(--gray-600);
+border: none;
+background: transparent;
+font-family: 'Inter', sans-serif;
+}
+
+.tab.active {
+background: var(--white);
+color: var(--black);
+box-shadow: var(--shadow-sm);
+}
+
+.tab:hover:not(.active) { color: var(--black); }
+
+.tab-content { display: none; }
+.tab-content.active { display: block; animation: fadeIn 0.4s ease; }
+
+/* ===== NEWSLETTER ===== */
+.newsletter-section {
+background: var(--gray-50);
+padding: 60px 0;
+}
+
+.newsletter-card {
+background: var(--white);
+border-radius: var(--radius-xl);
+padding: 48px;
+display: flex;
+align-items: center;
+gap: 48px;
+box-shadow: var(--shadow-md);
+border: 1px solid var(--gray-100);
+}
+
+@media (max-width: 768px) {
+.newsletter-card {
+flex-direction: column;
+padding: 32px 24px;
+text-align: center;
+}
+}
+
+.newsletter-info h3 {
+font-size: 1.3rem;
+margin-bottom: 8px;
+}
+
+.newsletter-info p {
+color: var(--gray-500);
+font-size: 0.9rem;
+}
+
+.newsletter-form {
+display: flex;
+gap: 12px;
+flex: 1;
+max-width: 500px;
+}
+
+@media (max-width: 768px) {
+.newsletter-form {
+flex-direction: column;
+width: 100%;
+}
+}
+
+.newsletter-form input {
+flex: 1;
+padding: 14px 20px;
+border: 1.5px solid var(--gray-200);
+border-radius: var(--radius-full);
+font-size: 0.95rem;
+font-family: 'Inter', sans-serif;
+outline: none;
+transition: var(--transition);
+}
+
+.newsletter-form input:focus {
+border-color: var(--gold);
+}
+
+/* ===== GUARANTEE SECTION ===== */
+.guarantee-section {
+padding: 60px 0;
+background: var(--white);
+}
+
+.guarantee-grid {
+display: grid;
+grid-template-columns: repeat(4, 1fr);
+gap: 24px;
+}
+
+@media (max-width: 768px) {
+.guarantee-grid { grid-template-columns: repeat(2, 1fr); }
+}
+
+.guarantee-item {
+text-align: center;
+padding: 24px;
+}
+
+.guarantee-icon {
+width: 48px;
+height: 48px;
+margin: 0 auto 16px;
+color: var(--gold);
+}
+
+.guarantee-item h4 {
+font-size: 0.9rem;
+margin-bottom: 4px;
+}
+
+.guarantee-item p {
+font-size: 0.8rem;
+color: var(--gray-500);
+}
+
+/* ===== MAP PLACEHOLDER ===== */
+.map-placeholder {
+width: 100%;
+height: 400px;
+background: var(--gray-100);
+border-radius: var(--radius-lg);
+display: flex;
+align-items: center;
+justify-content: center;
+color: var(--gray-400);
+font-size: 1.1rem;
+margin-top: 24px;
+overflow: hidden;
+position: relative;
+}
+
+.map-placeholder iframe {
+width: 100%;
+height: 100%;
+border: none;
+}
+
+/* ===== NOTARIS CALCULATOR ===== */
+.notaris-result {
+background: var(--gray-50);
+border-radius: var(--radius-md);
+padding: 24px;
+margin-top: 24px;
+}
+
+.notaris-line {
+display: flex;
+justify-content: space-between;
+padding: 12px 0;
+border-bottom: 1px solid var(--gray-200);
+font-size: 0.9rem;
+}
+
+.notaris-line:last-child { border: none; font-weight: 700; font-size: 1rem; }
+
+.notaris-label { color: var(--gray-600); }
+.notaris-value { color: var(--black); font-weight: 600; }
+</style>
+</head>
+<body>
+
+<!-- ===== NAVBAR ===== -->
+<nav class="navbar" id="navbar">
+<div class="navbar-inner">
+<a href="#" class="logo" onclick="showPage('home')">
+<div class="logo-icon">F</div>
+<div class="logo-text">FENIX <span>Properties</span></div>
+</a>
+<ul class="nav-links">
+<li><a href="#" class="active" data-page="home" onclick="showPage('home')">Accueil</a></li>
+<li><a href="#" data-page="buy" onclick="showPage('buy')">Acheter</a></li>
+<li><a href="#" data-page="rent" onclick="showPage('rent')">Louer</a></li>
+<li><a href="#" data-page="sell" onclick="showPage('sell')">Vendre</a></li>
+<li><a href="#" data-page="invest" onclick="showPage('invest')">Investir</a></li>
+<li><a href="#" data-page="blog" onclick="showPage('blog')">Blog</a></li>
+</ul>
+<div class="nav-actions">
+<a href="tel:+32495559978" class="btn btn-outline btn-sm" style="display:none" id="desktopCall">
+<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+Appeler
+</a>
+<button class="btn btn-primary btn-sm" onclick="openModal('contactModal')">Contact</button>
+<button class="hamburger" id="hamburger" onclick="toggleMobile()">
+<span></span><span></span><span></span>
+</button>
+</div>
+</div>
+</nav>
+
+<!-- Mobile Menu -->
+<div class="mobile-menu" id="mobileMenu">
+<a href="#" onclick="showPage('home'); toggleMobile()">Accueil</a>
+<a href="#" onclick="showPage('buy'); toggleMobile()">Acheter</a>
+<a href="#" onclick="showPage('rent'); toggleMobile()">Louer</a>
+<a href="#" onclick="showPage('sell'); toggleMobile()">Vendre</a>
+<a href="#" onclick="showPage('invest'); toggleMobile()">Investir</a>
+<a href="#" onclick="showPage('blog'); toggleMobile()">Blog</a>
+<div class="mobile-menu-actions">
+<a href="tel:+32495559978" class="btn btn-primary btn-lg" style="width:100%">📞 Appeler</a>
+<a href="https://wa.me/32495559978" class="btn btn-outline btn-lg" style="width:100%">💬 WhatsApp</a>
+</div>
+</div>
+
+<!-- ===== HOME PAGE ===== -->
+<div class="page active" id="page-home">
+
+<!-- Hero -->
+<section class="hero">
+<div class="hero-bg"></div>
+<div class="hero-overlay"></div>
+<div class="container hero-content">
+<div class="hero-badge">
+<svg viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+Agence Immobilière Premium à Bruxelles
+</div>
+<h1>Trouvez votre<br>bien <span class="gold">d'exception</span><br>à Bruxelles</h1>
+<p class="hero-subtitle">Découvrez une sélection exclusive de biens immobiliers premium au cœur de la capitale belge. Votre partenaire de confiance depuis plus de 10 ans.</p>
+<div class="hero-stats">
+<div class="hero-stat">
+<div class="hero-stat-number">500<span class="gold">+</span></div>
+<div class="hero-stat-label">Biens vendus</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-number">98<span class="gold">%</span></div>
+<div class="hero-stat-label">Clients satisfaits</div>
+</div>
+<div class="hero-stat">
+<div class="hero-stat-number">15<span class="gold">M€</span></div>
+<div class="hero-stat-label">Transactions/an</div>
+</div>
+</div>
+<div class="search-box">
+<div class="search-tabs">
+<button class="search-tab active" onclick="switchSearchTab(this, 'buy')">Acheter</button>
+<button class="search-tab" onclick="switchSearchTab(this, 'rent')">Louer</button>
+<button class="search-tab" onclick="switchSearchTab(this, 'estimate')">Estimer</button>
+</div>
+<div class="search-fields" id="searchFields">
+<div class="search-field">
+<label>Type de bien</label>
+<select>
+<option>Tous les types</option>
+<option>Appartement</option>
+<option>Maison</option>
+<option>Studio</option>
+<option>Penthouse</option>
+<option>Terrain</option>
+</select>
+</div>
+<div class="search-field">
+<label>Quartier</label>
+<select>
+<option>Tous les quartiers</option>
+<option>Centre-ville</option>
+<option>Saint-Gilles</option>
+<option>Ixelles</option>
+<option>Uccle</option>
+<option>Woluwe</option>
+<option>Schaerbeek</option>
+<option>Etterbeek</option>
+</select>
+</div>
+<div class="search-field">
+<label>Budget max</label>
+<select>
+<option>Sans limite</option>
+<option>200.000 €</option>
+<option>350.000 €</option>
+<option>500.000 €</option>
+<option>750.000 €</option>
+<option>1.000.000 €</option>
+<option>1.500.000 €+</option>
+</select>
+</div>
+<button class="search-btn" onclick="showPage('buy')">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+Rechercher
+</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Message Section -->
+<section class="message-section">
+<div class="container">
+<div class="message-card animate-on-scroll">
+<div class="quote-icon">"</div>
+<p class="message-text">FENIX Properties est une agence immobilière active en région bruxelloise. Notre agence est située au cœur de la capitale au croisement du quartier Dansaert et de la place Sainte-Catherine. C'est dans cet environnement d'effervescence, largement fréquenté par une clientèle cosmopolite, que notre équipe travaille ensemble à la réussite d'un objectif commun: <strong>offrir un service de qualité à ses clients.</strong><br><br><strong>Compétences, engagement et intégrité</strong> sont nos principes directeurs.</p>
+</div>
+</div>
+</section>
+
+<!-- Recent Properties -->
+<section class="section" id="recent-properties">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Nos biens</div>
+<h2 class="section-title">Biens récemment mis en vente</h2>
+<p class="section-subtitle">Découvrez notre sélection de biens immobiliers premium à Bruxelles et environs</p>
+</div>
+<div class="properties-grid">
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(0)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/149ee8ac5-23e7-48fc-b24f-1ddf509ee21c.png" alt="Appartement luxe Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-new">Nouveau</span>
+<span class="badge badge-luxury">Premium</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">485.000 €</div>
+<div class="property-title">Appartement 3 chambres - Vue panoramique</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Bruxelles Centre, 1000
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+3 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+145 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">A+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(1)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1aa1b5f4a-c7cb-4da0-9f4c-7aa63a725038.png" alt="Penthouse Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-luxury">Luxe</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">1.250.000 €</div>
+<div class="property-title">Penthouse avec terrasse - Vue Grand Place</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Bruxelles Centre, 1000
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+4 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+220 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">A</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(2)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/19ec6e865-8bdc-4f61-a874-761755aa3ffb.png" alt="Appartement design Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-new">Nouveau</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">320.000 €</div>
+<div class="property-title">Duplex moderne - Quartier Dansaert</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Dansaert, 1000
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+2 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+95 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">B</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(3)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/132070b82-4716-4c53-b245-c6f0741e18b1.png" alt="Loft de luxe Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-luxury">Luxe</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">750.000 €</div>
+<div class="property-title">Loft d'architecte - Sablon</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Sablon, 1000
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+3 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+180 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">A+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(4)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/17af25317-809a-4e9e-8bf6-158d9d325adf.png" alt="Studio Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-new">Nouveau</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">185.000 €</div>
+<div class="property-title">Studio rénové - Porte de Namur</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Porte de Namur, 1000
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+1 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+55 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">B+</span>
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(5)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1f5ab1bcc-ce6a-4325-8b38-a974bdca6537.png" alt="Maison jardin Bruxelles" loading="lazy">
+<div class="property-badges">
+<span class="badge badge-luxury">Premium</span>
+</div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">680.000 €</div>
+<div class="property-title">Maison avec jardin - Ixelles</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Ixelles, 1050
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+4 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+210 m²
+</div>
+<div class="property-feature">
+<span class="badge badge-energy">A</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:40px;">
+<a href="#" class="btn btn-outline btn-lg" onclick="showPage('buy')">Voir tous les biens →</a>
+</div>
+</div>
+</section>
+
+<!-- Neighborhoods -->
+<section class="section" style="background: var(--gray-50);">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Quartiers</div>
+<h2 class="section-title">Explorez les quartiers de Bruxelles</h2>
+<p class="section-subtitle">Chaque quartier a son propre caractère et ses opportunités</p>
+</div>
+<div class="neighborhoods-grid">
+<div class="neighborhood-card animate-on-scroll" onclick="showPage('buy')">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1b4468103-d5d9-4380-aa1e-427d2ef10932.png" alt="Centre-ville Bruxelles" loading="lazy">
+<div class="neighborhood-overlay">
+<div class="neighborhood-name">Centre-ville</div>
+<div class="neighborhood-count">48 biens disponibles</div>
+</div>
+</div>
+<div class="neighborhood-card animate-on-scroll" onclick="showPage('buy')">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/104acbb84-6889-404b-89a7-4f5b25601325.png" alt="Uccle" loading="lazy">
+<div class="neighborhood-overlay">
+<div class="neighborhood-name">Uccle</div>
+<div class="neighborhood-count">35 biens disponibles</div>
+</div>
+</div>
+<div class="neighborhood-card animate-on-scroll" onclick="showPage('buy')">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/145453d0a-96d5-4765-b850-7752fb21800e.png" alt="Saint-Gilles" loading="lazy">
+<div class="neighborhood-overlay">
+<div class="neighborhood-name">Saint-Gilles</div>
+<div class="neighborhood-count">29 biens disponibles</div>
+</div>
+</div>
+<div class="neighborhood-card animate-on-scroll" onclick="showPage('buy')">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/14f96d77f-79cc-4b8f-930e-6fccb11d9343.png" alt="Ixelles" loading="lazy">
+<div class="neighborhood-overlay">
+<div class="neighborhood-name">Ixelles</div>
+<div class="neighborhood-count">42 biens disponibles</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Services -->
+<section class="section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Nos services</div>
+<h2 class="section-title">Un accompagnement complet</h2>
+<p class="section-subtitle">De la recherche à la signature, nous vous accompagnons à chaque étape</p>
+</div>
+<div class="services-grid">
+<div class="service-card animate-on-scroll">
+<div class="service-icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+</div>
+<div class="service-title">Recherche sur mesure</div>
+<div class="service-desc">Nous identifions les biens qui correspondent exactement à vos critères et à votre budget.</div>
+</div>
+<div class="service-card animate-on-scroll">
+<div class="service-icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<div class="service-title">Accompagnement juridique</div>
+<div class="service-desc">Nos experts juridiques vous guident dans toutes les démarches administratives et légales.</div>
+</div>
+<div class="service-card animate-on-scroll">
+<div class="service-icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2" ry="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+</div>
+<div class="service-title">Visites virtuelles</div>
+<div class="service-desc">Découvrez les biens depuis chez vous grâce à nos visites virtuelles 360° en haute qualité.</div>
+</div>
+<div class="service-card animate-on-scroll">
+<div class="service-icon">
+<svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+</div>
+<div class="service-title">Financement</div>
+<div class="service-desc">Nous vous aidons à obtenir les meilleures conditions de prêt auprès de nos partenaires bancaires.</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Mortgage Simulator -->
+<section class="section simulator-section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Simulateur</div>
+<h2 class="section-title">Calculez votre crédit immobilier</h2>
+<p class="section-subtitle">Estimez vos mensualités et votre capacité d'emprunt en quelques clics</p>
+</div>
+<div class="simulator-container">
+<div class="simulator-card animate-on-scroll">
+<h3 class="simulator-title">Simulateur de prêt</h3>
+<p class="simulator-subtitle">Ajustez les paramètres pour calculer vos mensualités</p>
+<div class="form-group">
+<label class="form-label">Prix du bien (€)</label>
+<input type="range" class="range-slider" id="priceSlider" min="100000" max="2000000" value="400000" step="10000" oninput="updateSimulator()">
+<div class="range-value">
+<span>100.000 €</span>
+<span id="priceValue">400.000 €</span>
+<span>2.000.000 €</span>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Apport personnel (€)</label>
+<input type="range" class="range-slider" id="apportSlider" min="0" max="500000" value="80000" step="5000" oninput="updateSimulator()">
+<div class="range-value">
+<span>0 €</span>
+<span id="apportValue">80.000 €</span>
+<span>500.000 €</span>
+</div>
+</div>
+<div class="form-group">
+<label class="form-label">Durée du prêt</label>
+<select class="form-select" id="durationSelect" onchange="updateSimulator()">
+<option value="10">10 ans</option>
+<option value="15">15 ans</option>
+<option value="20" selected>20 ans</option>
+<option value="25">25 ans</option>
+<option value="30">30 ans</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Taux d'intérêt (%)</label>
+<input type="range" class="range-slider" id="rateSlider" min="2" max="6" value="3.5" step="0.1" oninput="updateSimulator()">
+<div class="range-value">
+<span>2%</span>
+<span id="rateValue">3.5%</span>
+<span>6%</span>
+</div>
+</div>
+</div>
+<div class="simulator-result animate-on-scroll">
+<div class="result-label">Mensualité estimée</div>
+<div class="result-amount" id="monthlyPayment">1.865 €</div>
+<div class="result-details">
+<div class="result-row">
+<span class="result-row-label">Montant emprunté</span>
+<span class="result-row-value" id="loanAmount">320.000 €</span>
+</div>
+<div class="result-row">
+<span class="result-row-label">Taux d'intérêt</span>
+<span class="result-row-value" id="interestRate">3.5%</span>
+</div>
+<div class="result-row">
+<span class="result-row-label">Durée</span>
+<span class="result-row-value" id="loanDuration">20 ans</span>
+</div>
+<div class="result-row">
+<span class="result-row-label">Coût total du crédit</span>
+<span class="result-row-value" id="totalCost">127.600 €</span>
+</div>
+<div class="result-row">
+<span class="result-row-label">Droits d'enregistrement (BE)</span>
+<span class="result-row-value" id="registrationFees">48.000 €</span>
+</div>
+</div>
+<div style="margin-top:24px; display:flex; gap:12px; flex-wrap:wrap;">
+<button class="btn btn-gold" onclick="openModal('contactModal')">Demander un devis</button>
+<button class="btn btn-outline" style="border-color:rgba(255,255,255,0.3);color:var(--white);" onclick="showPage('invest')">Guide investissement</button>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Notary Fees Calculator -->
+<section class="section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Frais annexes</div>
+<h2 class="section-title">Estimez vos frais de notaire</h2>
+<p class="section-subtitle">Calculez les frais totaux d'acquisition en Belgique</p>
+</div>
+<div style="max-width:600px; margin:0 auto;">
+<div class="simulator-card animate-on-scroll">
+<div class="form-group">
+<label class="form-label">Prix d'acquisition (€)</label>
+<input type="number" class="form-input" id="notarisPrice" value="400000" oninput="calcNotaris()">
+</div>
+<div class="notaris-result" id="notarisResult">
+<div class="notaris-line">
+<span class="notaris-label">Prix du bien</span>
+<span class="notaris-value" id="notarisBien">400.000 €</span>
+</div>
+<div class="notaris-line">
+<span class="notaris-label">Droits d'enregistrement (12.5%)</span>
+<span class="notaris-value" id="notarisDroits">50.000 €</span>
+</div>
+<div class="notaris-line">
+<span class="notaris-label">Frais de notaire (≈1.5%)</span>
+<span class="notaris-value" id="notarisFrais">6.000 €</span>
+</div>
+<div class="notaris-line">
+<span class="notaris-label">Total à prévoir</span>
+<span class="notaris-value" id="notarisTotal">456.000 €</span>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Market Statistics -->
+<section class="stats-section">
+<div class="container">
+<div class="section-header animate-on-scroll" style="margin-bottom:48px;">
+<div class="section-label" style="color:var(--gold-light);">Marché immobilier</div>
+<h2 class="section-title" style="color:var(--white);">Le marché bruxellois en chiffres</h2>
+</div>
+<div class="stats-grid">
+<div class="stat-item animate-on-scroll">
+<div class="stat-number" data-count="3845">0</div>
+<div class="stat-label">Biens vendus à Bruxelles (2025)</div>
+</div>
+<div class="stat-item animate-on-scroll">
+<div class="stat-number" data-count="4200">0</div>
+<div class="stat-label">Prix moyen au m² (€)</div>
+</div>
+<div class="stat-item animate-on-scroll">
+<div class="stat-number" data-count="15">0</div>
+<div class="stat-label">Augmentation annuelle (%)</div>
+</div>
+<div class="stat-item animate-on-scroll">
+<div class="stat-number" data-count="98">0</div>
+<div class="stat-label">Taux de satisfaction client (%)</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Rental Properties -->
+<section class="section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Location</div>
+<h2 class="section-title">Biens disponibles à la location</h2>
+<p class="section-subtitle">Des appartements et maisons meublés et non meublés dans toute la région bruxelloise</p>
+</div>
+<div class="properties-grid">
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(6)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1d342f072-6ed0-43d8-870b-29391419cadc.png" alt="Appartement location" loading="lazy">
+<div class="property-badges"><span class="badge badge-new">Meublé</span></div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">1.450 € <span class="period">/mois</span></div>
+<div class="property-title">Appartement 2 chambres - Meublé</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Saint-Gilles, 1060
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+2 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+85 m²
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(7)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/199c9672a-089a-4cfb-b021-d3d66354e697.png" alt="Studio location" loading="lazy">
+<div class="property-badges"><span class="badge badge-new">Nouveau</span></div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">950 € <span class="period">/mois</span></div>
+<div class="property-title">Studio meublé - Proche ULB</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Ixelles, 1050
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+1 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+45 m²
+</div>
+</div>
+</div>
+</div>
+
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(8)">
+<div class="property-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13e7a6113-7ad0-453c-9b1d-2905f08aadf2.png" alt="Maison location" loading="lazy">
+<div class="property-badges"><span class="badge badge-luxury">Premium</span></div>
+<button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)">
+<svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg>
+</button>
+</div>
+<div class="property-content">
+<div class="property-price">2.200 € <span class="period">/mois</span></div>
+<div class="property-title">Maison 4 chambres avec jardin</div>
+<div class="property-location">
+<svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+Woluwe, 1150
+</div>
+<div class="property-features">
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 22V3h18v19"/><path d="M3 12h18"/><path d="M12 3v19"/></svg>
+4 ch.
+</div>
+<div class="property-feature">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+160 m²
+</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:40px;">
+<a href="#" class="btn btn-outline btn-lg" onclick="showPage('rent')">Voir toutes les locations →</a>
+</div>
+</div>
+</section>
+
+<!-- Investment Section -->
+<section class="section" style="background: var(--gray-50);">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Investissement</div>
+<h2 class="section-title">Investissez dans l'immobilier bruxellois</h2>
+<p class="section-subtitle">Rendements attractifs et patrimoine durable avec nos conseils d'experts</p>
+</div>
+<div style="display:grid; grid-template-columns:1fr 1fr; gap:24px;">
+<div class="chart-container animate-on-scroll">
+<h4 style="margin-bottom:20px; font-size:1rem;">Rendement locatif par quartier</h4>
+<div class="chart-bar">
+<div class="chart-bar-item">
+<div class="chart-bar-value">5.2%</div>
+<div class="chart-bar-fill" style="height:78%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">Centre</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">4.8%</div>
+<div class="chart-bar-fill" style="height:72%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">S-Gilles</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">4.5%</div>
+<div class="chart-bar-fill" style="height:67%; background: linear-gradient(to top, var(--blue-900), var(--blue-700));"></div>
+<div class="chart-bar-label">Ixelles</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">5.5%</div>
+<div class="chart-bar-fill" style="height:83%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">Anderlecht</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">4.2%</div>
+<div class="chart-bar-fill" style="height:63%; background: linear-gradient(to top, var(--blue-900), var(--blue-700));"></div>
+<div class="chart-bar-label">Woluwe</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">5.0%</div>
+<div class="chart-bar-fill" style="height:75%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">Schaerbeek</div>
+</div>
+</div>
+</div>
+<div class="chart-container animate-on-scroll">
+<h4 style="margin-bottom:20px; font-size:1rem;">Évolution des prix au m²</h4>
+<div class="chart-bar">
+<div class="chart-bar-item">
+<div class="chart-bar-value">2020</div>
+<div class="chart-bar-fill" style="height:50%; background: linear-gradient(to top, var(--blue-900), var(--blue-700));"></div>
+<div class="chart-bar-label">3.200€</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">2021</div>
+<div class="chart-bar-fill" style="height:58%; background: linear-gradient(to top, var(--blue-900), var(--blue-700));"></div>
+<div class="chart-bar-label">3.500€</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">2022</div>
+<div class="chart-bar-fill" style="height:65%; background: linear-gradient(to top, var(--blue-900), var(--blue-700));"></div>
+<div class="chart-bar-label">3.800€</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">2023</div>
+<div class="chart-bar-fill" style="height:75%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">4.000€</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">2024</div>
+<div class="chart-bar-fill" style="height:88%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">4.200€</div>
+</div>
+<div class="chart-bar-item">
+<div class="chart-bar-value">2025</div>
+<div class="chart-bar-fill" style="height:100%; background: linear-gradient(to top, var(--gold-dark), var(--gold));"></div>
+<div class="chart-bar-label">4.500€</div>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:40px;">
+<a href="#" class="btn btn-primary btn-lg" onclick="showPage('invest')">En savoir plus sur l'investissement →</a>
+</div>
+</div>
+</section>
+
+<!-- Blog -->
+<section class="section blog-section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Blog</div>
+<h2 class="section-title">Conseils & actualités immobilières</h2>
+<p class="section-subtitle">Restez informé du marché immobilier bruxellois avec nos articles d'experts</p>
+</div>
+<div class="blog-grid">
+<div class="blog-card animate-on-scroll" onclick="showPage('blog')">
+<div class="blog-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/10c16853e-8e52-4235-b80a-dc1cba8325cc.png" alt="Blog immobilier" loading="lazy">
+</div>
+<div class="blog-content">
+<span class="blog-category">Droit immobilier</span>
+<h3 class="blog-title">Bail en Belgique : tout ce que le locataire doit savoir en 2026</h3>
+<p class="blog-excerpt">Guide complet sur les droits et obligations du locataire en Belgique. Mise à jour avec les dernières réformes législatives.</p>
+<div class="blog-meta">
+<span>📅 15 Mai 2026</span>
+<span>⏱ 8 min de lecture</span>
+</div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll" onclick="showPage('blog')">
+<div class="blog-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13ad82722-7861-4e09-90b7-d375b837f3e3.png" alt="Prêt immobilier" loading="lazy">
+</div>
+<div class="blog-content">
+<span class="blog-category">Prêt immobilier</span>
+<h3 class="blog-title">Comment obtenir un crédit immobilier en Belgique : guide 2026</h3>
+<p class="blog-excerpt">Taux, conditions, apport personnel : tout ce qu'il faut savoir pour décrocher votre prêt immobilier.</p>
+<div class="blog-meta">
+<span>📅 10 Mai 2026</span>
+<span>⏱ 12 min de lecture</span>
+</div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll" onclick="showPage('blog')">
+<div class="blog-image">
+<img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/145e0a691-3d00-4970-9036-d399e9d37bd5.png" alt="Investissement" loading="lazy">
+</div>
+<div class="blog-content">
+<span class="blog-category">Investissement</span>
+<h3 class="blog-title">Investir en immobilier à Bruxelles : les quartiers les plus rentables</h3>
+<p class="blog-excerpt">Analyse détaillée des meilleurs quartiers pour investir dans l'immobilier à Bruxelles avec rendements actualisés.</p>
+<div class="blog-meta">
+<span>📅 5 Mai 2026</span>
+<span>⏱ 10 min de lecture</span>
+</div>
+</div>
+</div>
+</div>
+<div style="text-align:center; margin-top:40px;">
+<a href="#" class="btn btn-outline btn-lg" onclick="showPage('blog')">Voir tous les articles →</a>
+</div>
+</div>
+</section>
+
+<!-- FAQ -->
+<section class="section faq-section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">FAQ</div>
+<h2 class="section-title">Questions fréquentes</h2>
+<p class="section-subtitle">Retrouvez les réponses aux questions les plus posées par nos clients</p>
+</div>
+<div class="faq-container">
+<div class="faq-item animate-on-scroll">
+<button class="faq-question" onclick="toggleFaq(this)">
+Quels sont les frais d'agence pour un achat immobilier ?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<div class="faq-answer-inner">Chez FENIX Properties, les frais d'agence pour un achat sont à la charge du vendeur. L'acheteur ne paie aucun frais d'agence. Nous vous accompagnons gratuitement dans toutes vos démarches jusqu'à la signature chez le notaire.</div>
+</div>
+</div>
+<div class="faq-item animate-on-scroll">
+<button class="faq-question" onclick="toggleFaq(this)">
+Comment fonctionne l'estimation gratuite de mon bien ?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<div class="faq-answer-inner">Notre estimation gratuite se fait en deux étapes : une estimation en ligne basée sur les données du marché et une visite sur place par un de nos experts. Vous recevez un rapport détaillé avec la valeur estimée de votre bien et nos recommandations.</div>
+</div>
+</div>
+<div class="faq-item animate-on-scroll">
+<button class="faq-question" onclick="toggleFaq(this)">
+Quels documents sont nécessaires pour louer un appartement ?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<div class="faq-answer-inner">Pour louer un appartement en Belgique, vous devez fournir : une pièce d'identité, les 3 derniers bulletins de salaire, un contrat de travail ou attestation de revenus, et les derniers avertissements-extraits de rôle. Nous vous guidons dans la constitution de votre dossier.</div>
+</div>
+</div>
+<div class="faq-item animate-on-scroll">
+<button class="faq-question" onclick="toggleFaq(this)">
+Quelle est la garantie locative en Belgique ?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<div class="faq-answer-inner">En Belgique, la garantie locative correspond à 2 mois de loyer (bail résidentiel) ou 3 mois (bail étudiant). Elle peut être versée en une fois, en 3 mensualités, ou via un compte bloqué. Cette garantie est restituée au locataire à la fin du bail si le bien est en bon état.</div>
+</div>
+</div>
+<div class="faq-item animate-on-scroll">
+<button class="faq-question" onclick="toggleFaq(this)">
+Combien de temps dure le processus d'achat en Belgique ?
+<span class="faq-icon">+</span>
+</button>
+<div class="faq-answer">
+<div class="faq-answer-inner">Le processus d'achat immobilier en Belgique prend généralement entre 2 et 4 mois. Cela inclut la recherche du bien (1-2 mois), la négociation et la signature du compromis (2-4 semaines), et enfin l'acte authentique chez le notaire (2-3 mois après le compromis).</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Reviews -->
+<section class="section reviews-section">
+<div class="container">
+<div class="section-header animate-on-scroll">
+<div class="section-label">Avis clients</div>
+<h2 class="section-title">Ce que nos clients disent de nous</h2>
+</div>
+<div class="review-overall animate-on-scroll">
+<div class="review-overall-score">4.9</div>
+<div class="review-overall-stars">★★★★★</div>
+<div class="review-overall-count">Basé sur 127 avis clients</div>
+<button class="btn btn-gold" style="margin-top:20px;" onclick="openModal('reviewModal')">✍ Laisser un avis</button>
+</div>
+<div class="reviews-grid">
+<div class="review-card animate-on-scroll">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Service exceptionnel ! L'équipe de FENIX Properties nous a accompagnés du début à la fin. Ils ont trouvé l'appartement parfait en moins de 2 semaines. Je recommande vivement."</p>
+<div class="review-author">
+<div class="review-avatar">SM</div>
+<div>
+<div class="review-name">Sophie Martin</div>
+<div class="review-role">Acheteuse à Ixelles</div>
+</div>
+</div>
+</div>
+<div class="review-card animate-on-scroll">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"Professionnalisme et efficacité remarquables. La vente de notre maison s'est faite en un temps record et au prix souhaité. L'équipe est vraiment à l'écoute."</p>
+<div class="review-author">
+<div class="review-avatar">PD</div>
+<div>
+<div class="review-name">Pierre Dupont</div>
+<div class="review-role">Vendeur à Uccle</div>
+</div>
+</div>
+</div>
+<div class="review-card animate-on-scroll">
+<div class="review-stars">★★★★★</div>
+<p class="review-text">"En tant qu'investisseur, j'apprécie l'expertise de FENIX Properties. Leurs analyses de marché sont précises et leur conseil en investissement est inestimable."</p>
+<div class="review-author">
+<div class="review-avatar">MK</div>
+<div>
+<div class="review-name">Marc Kowalski</div>
+<div class="review-role">Investisseur à Schaerbeek</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!-- CTA -->
+<section class="cta-section">
+<div class="container">
+<div class="cta-card animate-on-scroll">
+<h2 class="cta-title">Prêt à trouver votre bien idéal ?</h2>
+<p class="cta-subtitle">Contactez nos experts dès aujourd'hui pour une consultation gratuite et personnalisée</p>
+<div class="cta-buttons">
+<a href="tel:+32495559978" class="btn btn-gold btn-lg">📞 Appelez-nous</a>
+<a href="https://wa.me/32495559978" class="btn btn-white btn-lg" target="_blank">💬 WhatsApp</a>
+<button class="btn btn-outline btn-lg" style="border-color:rgba(255,255,255,0.3);color:var(--white);" onclick="openModal('contactModal')">📋 Demande de contact</button>
+</div>
+</div>
+</div>
+</section>
+
+<!-- Newsletter -->
+<section class="newsletter-section">
+<div class="container">
+<div class="newsletter-card animate-on-scroll">
+<div class="newsletter-info">
+<h3> Restez informé</h3>
+<p>Recevez nos dernières offres et conseils immobiliers</p>
+</div>
+<form class="newsletter-form" onsubmit="event.preventDefault(); alert('Merci pour votre inscription !');">
+<input type="email" placeholder="Votre adresse email" required>
+<button type="submit" class="btn btn-gold">S'inscrire</button>
+</form>
+</div>
+</div>
+</section>
+
+<!-- Guarantee Section -->
+<section class="guarantee-section">
+<div class="container">
+<div class="guarantee-grid">
+<div class="guarantee-item animate-on-scroll">
+<div class="guarantee-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+</div>
+<h4>Confiance garantie</h4>
+<p>Plus de 500 transactions réussies</p>
+</div>
+<div class="guarantee-item animate-on-scroll">
+<div class="guarantee-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+</div>
+<h4>Expertise locale</h4>
+<p>Connaissance approfondie du marché bruxellois</p>
+</div>
+<div class="guarantee-item animate-on-scroll">
+<div class="guarantee-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><polyline points="12 6 12 12 16 14"/></svg>
+</div>
+<h4>Réactivité</h4>
+<p>Réponse sous 24h garantie</p>
+</div>
+<div class="guarantee-item animate-on-scroll">
+<div class="guarantee-icon">
+<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87"/><path d="M16 3.13a4 4 0 010 7.75"/></svg>
+</div>
+<h4>Accompagnement</h4>
+<p>De la recherche à la signature</p>
+</div>
+</div>
+</div>
+</section>
+
+</div>
+
+<!-- ===== BUY PAGE ===== -->
+<div class="page" id="page-buy">
+<div style="padding-top:72px;"></div>
+<section class="section">
+<div class="container">
+<div class="breadcrumbs">
+<a href="#" onclick="showPage('home')">Accueil</a>
+<span>›</span>
+<span class="current">Acheter</span>
+</div>
+<div class="section-header" style="text-align:left;">
+<h1 class="section-title">Acheter un bien immobilier à Bruxelles</h1>
+<p class="section-subtitle" style="margin:0;">Parcourez notre sélection de biens premium</p>
+</div>
+<div class="filter-bar">
+<div class="filter-grid">
+<div class="filter-group">
+<label>Type de bien</label>
+<select><option>Tous</option><option>Appartement</option><option>Maison</option><option>Studio</option><option>Penthouse</option></select>
+</div>
+<div class="filter-group">
+<label>Quartier</label>
+<select><option>Tous les quartiers</option><option>Centre-ville</option><option>Saint-Gilles</option><option>Ixelles</option><option>Uccle</option><option>Woluwe</option></select>
+</div>
+<div class="filter-group">
+<label>Prix min</label>
+<input type="number" placeholder="0 €">
+</div>
+<div class="filter-group">
+<label>Prix max</label>
+<input type="number" placeholder="Sans limite">
+</div>
+<div class="filter-group">
+<label>Chambres</label>
+<select><option>Toutes</option><option>1+</option><option>2+</option><option>3+</option><option>4+</option></select>
+</div>
+<div class="filter-group">
+<label>Surface min</label>
+<input type="number" placeholder="0 m²">
+</div>
+<div class="filter-group">
+<label>Classe énergétique</label>
+<select><option>Toutes</option><option>A+</option><option>A</option><option>B</option><option>C</option></select>
+</div>
+<div class="filter-group">
+<label>&nbsp;</label>
+<button class="btn btn-gold" style="width:100%;">Rechercher</button>
+</div>
+</div>
+</div>
+<div class="properties-grid">
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(0)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/149ee8ac5-23e7-48fc-b24f-1ddf509ee21c.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-new">Nouveau</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">485.000 €</div><div class="property-title">Appartement 3 chambres - Vue panoramique</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Bruxelles Centre, 1000</div><div class="property-features"><div class="property-feature">3 ch.</div><div class="property-feature">145 m²</div><div class="property-feature"><span class="badge badge-energy">A+</span></div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(1)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1aa1b5f4a-c7cb-4da0-9f4c-7aa63a725038.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-luxury">Luxe</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">1.250.000 €</div><div class="property-title">Penthouse avec terrasse - Vue Grand Place</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Bruxelles Centre, 1000</div><div class="property-features"><div class="property-feature">4 ch.</div><div class="property-feature">220 m²</div><div class="property-feature"><span class="badge badge-energy">A</span></div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(2)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/19ec6e865-8bdc-4f61-a874-761755aa3ffb.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-new">Nouveau</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">320.000 €</div><div class="property-title">Duplex moderne - Quartier Dansaert</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Dansaert, 1000</div><div class="property-features"><div class="property-feature">2 ch.</div><div class="property-feature">95 m²</div><div class="property-feature"><span class="badge badge-energy">B</span></div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(3)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/132070b82-4716-4c53-b245-c6f0741e18b1.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-luxury">Luxe</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">750.000 €</div><div class="property-title">Loft d'architecte - Sablon</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Sablon, 1000</div><div class="property-features"><div class="property-feature">3 ch.</div><div class="property-feature">180 m²</div><div class="property-feature"><span class="badge badge-energy">A+</span></div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(4)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/17af25317-809a-4e9e-8bf6-158d9d325adf.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-new">Nouveau</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">185.000 €</div><div class="property-title">Studio rénové - Porte de Namur</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Porte de Namur, 1000</div><div class="property-features"><div class="property-feature">1 ch.</div><div class="property-feature">55 m²</div><div class="property-feature"><span class="badge badge-energy">B+</span></div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(5)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1f5ab1bcc-ce6a-4325-8b38-a974bdca6537.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-luxury">Premium</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">680.000 €</div><div class="property-title">Maison avec jardin - Ixelles</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ixelles, 1050</div><div class="property-features"><div class="property-feature">4 ch.</div><div class="property-feature">210 m²</div><div class="property-feature"><span class="badge badge-energy">A</span></div></div></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== RENT PAGE ===== -->
+<div class="page" id="page-rent">
+<div style="padding-top:72px;"></div>
+<section class="section">
+<div class="container">
+<div class="breadcrumbs">
+<a href="#" onclick="showPage('home')">Accueil</a>
+<span>›</span>
+<span class="current">Louer</span>
+</div>
+<div class="section-header" style="text-align:left;">
+<h1 class="section-title">Louer un bien immobilier à Bruxelles</h1>
+<p class="section-subtitle" style="margin:0;">Appartements, maisons et studios disponibles immédiatement</p>
+</div>
+<div class="filter-bar">
+<div class="filter-grid">
+<div class="filter-group"><label>Type</label><select><option>Tous</option><option>Appartement</option><option>Maison</option><option>Studio</option><option>Meublé</option></select></div>
+<div class="filter-group"><label>Quartier</label><select><option>Tous</option><option>Centre-ville</option><option>Saint-Gilles</option><option>Ixelles</option><option>Uccle</option></select></div>
+<div class="filter-group"><label>Loyer max</label><input type="number" placeholder="Sans limite"></div>
+<div class="filter-group"><label>Chambres</label><select><option>Toutes</option><option>Studio</option><option>1+</option><option>2+</option><option>3+</option></select></div>
+<div class="filter-group"><label>Meublé</label><select><option>Tous</option><option>Meublé</option><option>Non meublé</option></select></div>
+<div class="filter-group"><label>Disponible</label><select><option>Immédiatement</option><option>Sous 1 mois</option><option>Sous 3 mois</option></select></div>
+<div class="filter-group"><label>&nbsp;</label><button class="btn btn-gold" style="width:100%;">Rechercher</button></div>
+</div>
+</div>
+<div class="properties-grid">
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(6)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1d342f072-6ed0-43d8-870b-29391419cadc.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-new">Meublé</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">1.450 € <span class="period">/mois</span></div><div class="property-title">Appartement 2 chambres - Meublé</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Saint-Gilles, 1060</div><div class="property-features"><div class="property-feature">2 ch.</div><div class="property-feature">85 m²</div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(7)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/199c9672a-089a-4cfb-b021-d3d66354e697.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-new">Nouveau</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">950 € <span class="period">/mois</span></div><div class="property-title">Studio meublé - Proche ULB</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Ixelles, 1050</div><div class="property-features"><div class="property-feature">1 ch.</div><div class="property-feature">45 m²</div></div></div>
+</div>
+<div class="property-card animate-on-scroll" onclick="openPropertyModal(8)">
+<div class="property-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13e7a6113-7ad0-453c-9b1d-2905f08aadf2.png" alt="" loading="lazy"><div class="property-badges"><span class="badge badge-luxury">Premium</span></div><button class="property-favorite" onclick="event.stopPropagation(); toggleFavorite(this)"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/></svg></button></div>
+<div class="property-content"><div class="property-price">2.200 € <span class="period">/mois</span></div><div class="property-title">Maison 4 chambres avec jardin</div><div class="property-location"><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>Woluwe, 1150</div><div class="property-features"><div class="property-feature">4 ch.</div><div class="property-feature">160 m²</div></div></div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== SELL PAGE ===== -->
+<div class="page" id="page-sell">
+<div style="padding-top:72px;"></div>
+<section class="sell-hero">
+<div class="container">
+<div class="breadcrumbs" style="justify-content:center; color:rgba(255,255,255,0.5);">
+<a href="#" onclick="showPage('home')" style="color:rgba(255,255,255,0.5);">Accueil</a>
+<span>›</span>
+<span style="color:var(--gold);">Vendre</span>
+</div>
+<h1>Vendez votre bien au meilleur prix</h1>
+<p>Estimation gratuite et accompagnement complet par nos experts immobiliers</p>
+<div style="margin-top:32px;">
+<button class="btn btn-gold btn-lg" onclick="openModal('contactModal')"> Estimation gratuite</button>
+</div>
+<div class="sell-features">
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2" ry="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+</div>
+<h3>Photos professionnelles</h3>
+<p>Photographe spécialisé immobilier</p>
+</div>
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5z"/><path d="M2 17l10 5 10-5"/><path d="M2 12l10 5 10-5"/></svg>
+</div>
+<h3>Vidéo drone</h3>
+<p>Visite aérienne de votre bien</p>
+</div>
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/></svg>
+</div>
+<h3>Home staging</h3>
+<p>Mise en valeur de votre bien</p>
+</div>
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M14 2H6a2 2 0 00-2 2v16a2 2 0 002 2h12a2 2 0 002-2V8z"/><polyline points="14 2 14 8 20 8"/></svg>
+</div>
+<h3>Accompagnement juridique</h3>
+<p>Assistance complète jusqu'à la signature</p>
+</div>
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="12" y1="1" x2="12" y2="23"/><path d="M17 5H9.5a3.5 3.5 0 000 7h5a3.5 3.5 0 010 7H6"/></svg>
+</div>
+<h3>Stratégie de prix</h3>
+<p>Analyse comparative du marché</p>
+</div>
+<div class="sell-feature">
+<div class="sell-feature-icon">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 12h-4l-3 9L9 3l-3 9H2"/></svg>
+</div>
+<h3>Diffusion maximale</h3>
+<p>Visibilité sur toutes les plateformes</p>
+</div>
+</div>
+</div>
+</section>
+<section class="section">
+<div class="container">
+<div style="max-width:600px; margin:0 auto;">
+<div class="simulator-card">
+<h3 class="simulator-title">Demande d'estimation gratuite</h3>
+<p class="simulator-subtitle">Remplissez le formulaire et recevez votre estimation sous 24h</p>
+<div class="form-group">
+<label class="form-label">Type de bien</label>
+<select class="form-select"><option>Appartement</option><option>Maison</option><option>Studio</option><option>Loft</option><option>Terrain</option></select>
+</div>
+<div class="form-group">
+<label class="form-label">Adresse</label>
+<input type="text" class="form-input" placeholder="Rue et numéro">
+</div>
+<div class="form-group">
+<label class="form-label">Surface (m²)</label>
+<input type="number" class="form-input" placeholder="Ex: 120">
+</div>
+<div class="form-group">
+<label class="form-label">Nombre de chambres</label>
+<select class="form-select"><option>1</option><option>2</option><option>3</option><option>4</option><option>5+</option></select>
+</div>
+<div class="form-group">
+<label class="form-label">Votre nom</label>
+<input type="text" class="form-input" placeholder="Nom complet">
+</div>
+<div class="form-group">
+<label class="form-label">Téléphone</label>
+<input type="tel" class="form-input" placeholder="+32 XXX XX XX XX">
+</div>
+<div class="form-group">
+<label class="form-label">Email</label>
+<input type="email" class="form-input" placeholder="votre@email.com">
+</div>
+<button class="btn btn-gold btn-lg" style="width:100%;" onclick="alert('Merci ! Notre équipe vous contactera sous 24h avec votre estimation.')">Demander mon estimation gratuite</button>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== INVEST PAGE ===== -->
+<div class="page" id="page-invest">
+<div style="padding-top:72px;"></div>
+<section class="section">
+<div class="container">
+<div class="breadcrumbs">
+<a href="#" onclick="showPage('home')">Accueil</a>
+<span>›</span>
+<span class="current">Investir</span>
+</div>
+<div class="section-header" style="text-align:left;">
+<h1 class="section-title">Investissement immobilier à Bruxelles</h1>
+<p class="section-subtitle" style="margin:0;">Maximisez votre rentabilité avec nos conseils d'experts</p>
+</div>
+<div style="display:grid; grid-template-columns:repeat(3, 1fr); gap:24px; margin-bottom:48px;">
+<div class="simulator-card animate-on-scroll">
+<div style="font-size:2rem; margin-bottom:8px;">🏠</div>
+<h3 style="font-size:1rem; margin-bottom:8px;">Immobilier résidentiel</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.6;">Rendement moyen de 4-5% net. Idéal pour un investissement stable et sécurisé à long terme.</p>
+<div style="margin-top:16px;"><span style="color:var(--gold); font-weight:700;">Rendement: 4.5%</span></div>
+</div>
+<div class="simulator-card animate-on-scroll">
+<div style="font-size:2rem; margin-bottom:8px;">🎓</div>
+<h3 style="font-size:1rem; margin-bottom:8px;">Immobilier étudiant</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.6;">Forte demande à Bruxelles avec les universités. Rendements attractifs avec colocation.</p>
+<div style="margin-top:16px;"><span style="color:var(--gold); font-weight:700;">Rendement: 6-7%</span></div>
+</div>
+<div class="simulator-card animate-on-scroll">
+<div style="font-size:2rem; margin-bottom:8px;">🏢</div>
+<h3 style="font-size:1rem; margin-bottom:8px;">Immeuble de rapport</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.6;">Diversification des revenus locatifs. Idéal pour les investisseurs expérimentés.</p>
+<div style="margin-top:16px;"><span style="color:var(--gold); font-weight:700;">Rendement: 5-6%</span></div>
+</div>
+</div>
+<div class="simulator-card animate-on-scroll" style="margin-bottom:48px;">
+<h3 class="simulator-title">Simulateur de rentabilité locative</h3>
+<p class="simulator-subtitle">Calculez le rendement de votre investissement</p>
+<div class="form-group"><label class="form-label">Prix d'acquisition (€)</label><input type="number" class="form-input" id="investPrice" value="300000" oninput="calcInvest()"></div>
+<div class="form-group"><label class="form-label">Loyer mensuel estimé (€)</label><input type="number" class="form-input" id="investRent" value="1200" oninput="calcInvest()"></div>
+<div class="form-group"><label class="form-label">Frais annuels (charges, taxes, etc.)</label><input type="number" class="form-input" id="investCosts" value="2400" oninput="calcInvest()"></div>
+<div class="notaris-result" id="investResult">
+<div class="notaris-line"><span class="notaris-label">Revenu locatif annuel</span><span class="notaris-value" id="investRevenue">14.400 €</span></div>
+<div class="notaris-line"><span class="notaris-label">Frais annuels</span><span class="notaris-value" id="investCostsResult">2.400 €</span></div>
+<div class="notaris-line"><span class="notaris-label">Revenu net annuel</span><span class="notaris-value" id="investNetRevenue">12.000 €</span></div>
+<div class="notaris-line"><span class="notaris-label">Rendement brut</span><span class="notaris-value" id="investGrossYield">4.80%</span></div>
+<div class="notaris-line"><span class="notaris-label">Rendement net</span><span class="notaris-value" style="color:var(--gold); font-size:1.2rem;" id="investNetYield">4.00%</span></div>
+</div>
+</div>
+<h2 style="font-size:1.5rem; margin-bottom:24px;">Fiscalité immobilière en Belgique</h2>
+<div style="display:grid; grid-template-columns:repeat(2, 1fr); gap:24px;">
+<div class="simulator-card animate-on-scroll">
+<h3 style="font-size:1rem; margin-bottom:12px;">📊 Précompte immobilier</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.7;">Le précompte immobilier est un impôt annuel basé sur le revenu cadastral de votre bien. À Bruxelles, le taux varie selon la commune (1.25% à 2.56%).</p>
+</div>
+<div class="simulator-card animate-on-scroll">
+<h3 style="font-size:1rem; margin-bottom:12px;">📋 Impôt sur les revenus locatifs</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.7;">Les revenus locatifs sont imposés au taux libératoire de 30% ou intégrés dans votre déclaration personnelle. Optimisez votre fiscalité avec nos conseils.</p>
+</div>
+<div class="simulator-card animate-on-scroll">
+<h3 style="font-size:1rem; margin-bottom:12px;"> Droits d'enregistrement</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.7;">En Région de Bruxelles-Capitale, les droits d'enregistrement sont de 12.5% pour les biens résidentiels. Des réductions existent pour les primo-acquéreurs.</p>
+</div>
+<div class="simulator-card animate-on-scroll">
+<h3 style="font-size:1rem; margin-bottom:12px;">💰 Plus-value immobilière</h3>
+<p style="font-size:0.85rem; color:var(--gray-500); line-height:1.7;">La plus-value sur la vente d'un bien immobilier est généralement exonérée d'impôt si le bien a été détenu pendant plus de 5 ans.</p>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== BLOG PAGE ===== -->
+<div class="page" id="page-blog">
+<div style="padding-top:72px;"></div>
+<section class="section">
+<div class="container">
+<div class="breadcrumbs">
+<a href="#" onclick="showPage('home')">Accueil</a>
+<span>›</span>
+<span class="current">Blog</span>
+</div>
+<div class="section-header" style="text-align:left;">
+<h1 class="section-title">Blog Immobilier</h1>
+<p class="section-subtitle" style="margin:0;">Articles, guides et actualités du marché immobilier bruxellois</p>
+</div>
+<div class="tabs">
+<button class="tab active" onclick="switchBlogTab(this, 'all')">Tous</button>
+<button class="tab" onclick="switchBlogTab(this, 'droit')">Droit</button>
+<button class="tab" onclick="switchBlogTab(this, 'pret')">Prêt</button>
+<button class="tab" onclick="switchBlogTab(this, 'invest')">Investissement</button>
+<button class="tab" onclick="switchBlogTab(this, 'guides')">Guides</button>
+</div>
+<div class="blog-grid" id="blogGrid">
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/10c16853e-8e52-4235-b80a-dc1cba8325cc.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Droit immobilier</span>
+<h3 class="blog-title">Bail en Belgique : tout ce que le locataire doit savoir en 2026</h3>
+<p class="blog-excerpt">Guide complet sur les droits et obligations du locataire en Belgique.</p>
+<div class="blog-meta"><span>📅 15 Mai 2026</span><span>⏱ 8 min</span></div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13ad82722-7861-4e09-90b7-d375b837f3e3.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Prêt immobilier</span>
+<h3 class="blog-title">Comment obtenir un crédit immobilier en Belgique : guide 2026</h3>
+<p class="blog-excerpt">Taux, conditions, apport personnel : tout pour décrocher votre prêt.</p>
+<div class="blog-meta"><span>📅 10 Mai 2026</span><span>⏱ 12 min</span></div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/145e0a691-3d00-4970-9036-d399e9d37bd5.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Investissement</span>
+<h3 class="blog-title">Investir en immobilier à Bruxelles : les quartiers les plus rentables</h3>
+<p class="blog-excerpt">Analyse détaillée des meilleurs quartiers pour investir.</p>
+<div class="blog-meta"><span>📅 5 Mai 2026</span><span>⏱ 10 min</span></div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/17d291496-be85-4a4f-be57-7495d278d540.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Guides locataires</span>
+<h3 class="blog-title">Trouver un appartement à Bruxelles : éviter les arnaques</h3>
+<p class="blog-excerpt">Conseils pratiques pour sécuriser votre recherche locative.</p>
+<div class="blog-meta"><span>📅 1 Mai 2026</span><span>⏱ 6 min</span></div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1ea130721-5425-4e64-998c-c3cd80c9ccd1.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Guides propriétaires</span>
+<h3 class="blog-title">Augmenter la valeur de votre bien : 10 astuces éprouvées</h3>
+<p class="blog-excerpt">Rénovations et aménagements qui boostent la valeur de votre propriété.</p>
+<div class="blog-meta"><span>📅 25 Avr 2026</span><span> 8 min</span></div>
+</div>
+</div>
+<div class="blog-card animate-on-scroll">
+<div class="blog-image"><img src="https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1f839317c-1885-4187-a891-0400bf9cad0a.png" alt="" loading="lazy"></div>
+<div class="blog-content">
+<span class="blog-category">Droit immobilier</span>
+<h3 class="blog-title">Garantie locative en Belgique : montant, modalités, restitution</h3>
+<p class="blog-excerpt">Tout savoir sur la garantie locative obligatoire en Belgique.</p>
+<div class="blog-meta"><span>📅 20 Avr 2026</span><span>⏱ 7 min</span></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</div>
+
+<!-- ===== FOOTER ===== -->
+<footer class="footer">
+<div class="container">
+<div class="footer-grid">
+<div class="footer-brand">
+<div class="logo" style="color:var(--white);">
+<div class="logo-icon">F</div>
+<div class="logo-text">FENIX <span>Properties</span></div>
+</div>
+<p>Agence immobilière premium au cœur de Bruxelles. Quai à la Houille 8, 1000 Bruxelles, Belgique.</p>
+<div style="margin-top:20px; display:flex; gap:12px;">
+<a href="tel:+32495559978" class="btn btn-sm" style="background:rgba(255,255,255,0.1);color:var(--white);border:1px solid rgba(255,255,255,0.2);">📞 +32 495 55 99 78</a>
+<a href="https://wa.me/32495559978" class="btn btn-sm" style="background:rgba(37,211,102,0.2);color:#25D366;border:1px solid rgba(37,211,102,0.3);"> WhatsApp</a>
+</div>
+</div>
+<div>
+<h4 class="footer-title">Navigation</h4>
+<ul class="footer-links">
+<li><a href="#" onclick="showPage('home')">Accueil</a></li>
+<li><a href="#" onclick="showPage('buy')">Acheter</a></li>
+<li><a href="#" onclick="showPage('rent')">Louer</a></li>
+<li><a href="#" onclick="showPage('sell')">Vendre</a></li>
+<li><a href="#" onclick="showPage('invest')">Investir</a></li>
+<li><a href="#" onclick="showPage('blog')">Blog</a></li>
+</ul>
+</div>
+<div>
+<h4 class="footer-title">Services</h4>
+<ul class="footer-links">
+<li><a href="#" onclick="showPage('sell')">Estimation gratuite</a></li>
+<li><a href="#" onclick="showPage('invest')">Investissement</a></li>
+<li><a href="#" onclick="showPage('sell')">Home staging</a></li>
+<li><a href="#" onclick="showPage('sell')">Photos professionnelles</a></li>
+<li><a href="#" onclick="showPage('sell')">Visites virtuelles</a></li>
+<li><a href="#" onclick="openModal('contactModal')">Contact</a></li>
+</ul>
+</div>
+<div>
+<h4 class="footer-title">Ressources</h4>
+<ul class="footer-links">
+<li><a href="#" onclick="showPage('blog')">Blog immobilier</a></li>
+<li><a href="#">FAQ</a></li>
+<li><a href="#">Mentions légales</a></li>
+<li><a href="#">Politique de confidentialité</a></li>
+<li><a href="#">Conditions générales</a></li>
+</ul>
+</div>
+</div>
+<div class="footer-bottom">
+<p>© 2026 FENIX Properties. Tous droits réservés.</p>
+<p>Quai à la Houille 8, 1000 Bruxelles, Belgique</p>
+</div>
+</div>
+</footer>
+
+<!-- ===== MOBILE STICKY CTA ===== -->
+<div class="mobile-cta">
+<a href="tel:+32495559978" class="mobile-cta-btn mobile-cta-call">📞 Appeler</a>
+<a href="https://wa.me/324955559978" class="mobile-cta-btn mobile-cta-whatsapp">💬 WhatsApp</a>
+<button class="mobile-cta-btn mobile-cta-estimate" onclick="openModal('contactModal')">📋 Estimer</button>
+</div>
+
+<!-- ===== FLOATING BUTTONS ===== -->
+<div class="floating-buttons">
+<button class="float-btn float-btn-chat" onclick="toggleChat()" title="Chat IA">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+</button>
+<a href="tel:+32495559978" class="float-btn float-btn-phone" title="Appeler">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+</a>
+<a href="https://wa.me/32495559978" class="float-btn float-btn-whatsapp" target="_blank" title="WhatsApp">
+<svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.437 9.884-9.885 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+</a>
+</div>
+
+<!-- ===== CHAT WIDGET ===== -->
+<div class="chat-widget" id="chatWidget">
+<div class="chat-header">
+<div class="chat-header-info">
+<div class="chat-avatar">F</div>
+<div class="chat-header-text">
+<h4>FENIX Assistant</h4>
+<p>En ligne • Réponse instantanée</p>
+</div>
+</div>
+<button class="chat-close" onclick="toggleChat()">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="18" y1="6" x2="6" y2="18"/><line x1="6" y1="6" x2="18" y2="18"/></svg>
+</button>
+</div>
+<div class="chat-messages" id="chatMessages">
+<div class="chat-message bot">Bonjour ! 👋 Je suis l'assistant virtuel de FENIX Properties. Comment puis-je vous aider aujourd'hui ?</div>
+</div>
+<div class="chat-input-area">
+<input type="text" class="chat-input" id="chatInput" placeholder="Tapez votre message..." onkeypress="if(event.key==='Enter')sendChat()">
+<button class="chat-send" onclick="sendChat()">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="22" y1="2" x2="11" y2="13"/><polygon points="22 2 15 22 11 13 2 9 22 2"/></svg>
+</button>
+</div>
+</div>
+
+<!-- ===== CONTACT MODAL ===== -->
+<div class="modal-overlay" id="contactModal">
+<div class="modal">
+<div class="modal-header">
+<h3 class="modal-title">Contactez-nous</h3>
+<button class="modal-close" onclick="closeModal('contactModal')">✕</button>
+</div>
+<div class="modal-body">
+<div class="form-group">
+<label class="form-label">Nom complet</label>
+<input type="text" class="form-input" placeholder="Votre nom">
+</div>
+<div class="form-group">
+<label class="form-label">Email</label>
+<input type="email" class="form-input" placeholder="votre@email.com">
+</div>
+<div class="form-group">
+<label class="form-label">Téléphone</label>
+<input type="tel" class="form-input" placeholder="+32 XXX XX XX XX">
+</div>
+<div class="form-group">
+<label class="form-label">Vous souhaitez</label>
+<select class="form-select">
+<option>Acheter un bien</option>
+<option>Vendre un bien</option>
+<option>Louer un bien</option>
+<option>Estimer un bien</option>
+<option>Investir</option>
+<option>Autre demande</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Message</label>
+<textarea class="form-input" rows="4" placeholder="Décrivez votre projet..." style="resize:vertical;"></textarea>
+</div>
+<button class="btn btn-gold btn-lg" style="width:100%;" onclick="alert('Merci ! Notre équipe vous contactera dans les plus brefs délais.'); closeModal('contactModal');">Envoyer ma demande</button>
+<div style="text-align:center; margin-top:16px;">
+<p style="font-size:0.85rem; color:var(--gray-500);">Ou contactez-nous directement :</p>
+<div style="display:flex; gap:12px; justify-content:center; margin-top:12px;">
+<a href="tel:+32495559978" class="btn btn-sm btn-primary">📞 Appeler</a>
+<a href="https://wa.me/324955559978" class="btn btn-sm" style="background:#25D366;color:white;">💬 WhatsApp</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== REVIEW MODAL ===== -->
+<div class="modal-overlay" id="reviewModal">
+<div class="modal">
+<div class="modal-header">
+<h3 class="modal-title">Laisser un avis</h3>
+<button class="modal-close" onclick="closeModal('reviewModal')">✕</button>
+</div>
+<div class="modal-body" style="text-align:center;">
+<p style="margin-bottom:20px; color:var(--gray-600);">Comment évaluez-vous votre expérience avec FENIX Properties ?</p>
+<div class="rating-stars" id="ratingStars">
+<svg class="rating-star" data-rating="1" viewBox="0 0 24 24" fill="currentColor" onclick="setRating(1)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="rating-star" data-rating="2" viewBox="0 0 24 24" fill="currentColor" onclick="setRating(2)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="rating-star" data-rating="3" viewBox="0 0 24 24" fill="currentColor" onclick="setRating(3)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="rating-star" data-rating="4" viewBox="0 0 24 24" fill="currentColor" onclick="setRating(4)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+<svg class="rating-star" data-rating="5" viewBox="0 0 24 24" fill="currentColor" onclick="setRating(5)"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+</div>
+<p id="ratingText" style="font-size:0.9rem; color:var(--gray-500); margin-bottom:24px;">Sélectionnez une note</p>
+<div class="form-group">
+<label class="form-label">Votre nom</label>
+<input type="text" class="form-input" placeholder="Nom complet">
+</div>
+<div class="form-group">
+<label class="form-label">Type de service</label>
+<select class="form-select">
+<option>Achat</option>
+<option>Vente</option>
+<option>Location</option>
+<option>Estimation</option>
+</select>
+</div>
+<div class="form-group">
+<label class="form-label">Votre commentaire</label>
+<textarea class="form-input" rows="4" placeholder="Partagez votre expérience..." style="resize:vertical;"></textarea>
+</div>
+<button class="btn btn-gold btn-lg" style="width:100%;" onclick="alert('Merci pour votre avis ! Il sera publié après validation.'); closeModal('reviewModal');">Publier mon avis</button>
+</div>
+</div>
+</div>
+
+<!-- ===== PROPERTY DETAIL MODAL ===== -->
+<div class="modal-overlay property-modal" id="propertyModal">
+<div class="modal" style="max-width:900px;">
+<div class="modal-header">
+<h3 class="modal-title">Détail du bien</h3>
+<button class="modal-close" onclick="closeModal('propertyModal')">✕</button>
+</div>
+<div class="modal-body">
+<div class="property-detail-images">
+<img id="modalPropertyImage" src="" alt="">
+</div>
+<div class="property-detail-content">
+<div class="property-detail-price" id="modalPropertyPrice"></div>
+<div class="property-detail-title" id="modalPropertyTitle"></div>
+<div class="property-detail-location" id="modalPropertyLocation"></div>
+<div class="property-detail-features">
+<div class="detail-feature">
+<div class="detail-feature-value" id="modalPropertyRooms"></div>
+<div class="detail-feature-label">Chambres</div>
+</div>
+<div class="detail-feature">
+<div class="detail-feature-value" id="modalPropertyArea"></div>
+<div class="detail-feature-label">Surface</div>
+</div>
+<div class="detail-feature">
+<div class="detail-feature-value" id="modalPropertyEnergy"></div>
+<div class="detail-feature-label">Classe énergie</div>
+</div>
+<div class="detail-feature">
+<div class="detail-feature-value" id="modalPropertyMonthly"></div>
+<div class="detail-feature-label">Mensualité estimée</div>
+</div>
+</div>
+<p class="property-detail-description" id="modalPropertyDesc"></p>
+<div class="property-detail-actions">
+<a href="tel:+32495559978" class="btn btn-primary">📞 Appeler</a>
+<a href="https://wa.me/324955559978" class="btn" style="background:#25D366;color:white;">💬 WhatsApp</a>
+<button class="btn btn-outline" onclick="alert('Visite programmée ! Nous vous contacterons pour confirmer.')">📅 Visiter</button>
+<button class="btn btn-outline">📤 Partager</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+<!-- ===== SCROLL TOP ===== -->
+<button class="scroll-top" id="scrollTop" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+<svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="18 15 12 9 6 15"/></svg>
+</button>
+
+<script>
+// ===== PAGE NAVIGATION =====
+function showPage(page) {
+document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+document.getElementById('page-' + page).classList.add('active');
+document.getElementById('page-' + page).classList.add('page-transition');
+document.querySelectorAll('.nav-links a').forEach(a => {
+a.classList.remove('active');
+if(a.dataset.page === page) a.classList.add('active');
+});
+window.scrollTo({ top: 0, behavior: 'smooth' });
+initAnimations();
+if(page === 'home') {
+calcNotaris();
+calcInvest();
+}
+}
+
+// ===== MOBILE MENU =====
+function toggleMobile() {
+document.getElementById('hamburger').classList.toggle('active');
+document.getElementById('mobileMenu').classList.toggle('active');
+document.body.style.overflow = document.getElementById('mobileMenu').classList.contains('active') ? 'hidden' : '';
+}
+
+// ===== NAVBAR SCROLL =====
+window.addEventListener('scroll', function() {
+const navbar = document.getElementById('navbar');
+const scrollTop = document.getElementById('scrollTop');
+if(window.scrollY > 50) {
+navbar.classList.add('scrolled');
+} else {
+navbar.classList.remove('scrolled');
+}
+if(window.scrollY > 500) {
+scrollTop.classList.add('visible');
+} else {
+scrollTop.classList.remove('visible');
+}
+});
+
+// ===== SEARCH TABS =====
+function switchSearchTab(el, type) {
+document.querySelectorAll('.search-tab').forEach(t => t.classList.remove('active'));
+el.classList.add('active');
+}
+
+// ===== MORTGAGE SIMULATOR =====
+function updateSimulator() {
+const price = parseInt(document.getElementById('priceSlider').value);
+const apport = parseInt(document.getElementById('apportSlider').value);
+const duration = parseInt(document.getElementById('durationSelect').value);
+const rate = parseFloat(document.getElementById('rateSlider').value);
+
+document.getElementById('priceValue').textContent = price.toLocaleString('fr-BE') + ' €';
+document.getElementById('apportValue').textContent = apport.toLocaleString('fr-BE') + ' €';
+document.getElementById('rateValue').textContent = rate + '%';
+
+const loanAmount = Math.max(0, price - apport);
+const monthlyRate = rate / 100 / 12;
+const numPayments = duration * 12;
+
+let monthly;
+if(monthlyRate === 0) {
+monthly = loanAmount / numPayments;
+} else {
+monthly = loanAmount * (monthlyRate * Math.pow(1 + monthlyRate, numPayments)) / (Math.pow(1 + monthlyRate, numPayments) - 1);
+}
+
+const totalCost = (monthly * numPayments) - loanAmount;
+const registrationFees = Math.round(price * 0.125);
+
+document.getElementById('monthlyPayment').textContent = Math.round(monthly).toLocaleString('fr-BE') + ' €';
+document.getElementById('loanAmount').textContent = loanAmount.toLocaleString('fr-BE') + ' €';
+document.getElementById('interestRate').textContent = rate + '%';
+document.getElementById('loanDuration').textContent = duration + ' ans';
+document.getElementById('totalCost').textContent = Math.round(totalCost).toLocaleString('fr-BE') + ' €';
+document.getElementById('registrationFees').textContent = registrationFees.toLocaleString('fr-BE') + ' €';
+}
+
+// ===== NOTARY FEES =====
+function calcNotaris() {
+const price = parseInt(document.getElementById('notarisPrice').value) || 0;
+const droits = Math.round(price * 0.125);
+const frais = Math.round(price * 0.015);
+const total = price + droits + frais;
+
+document.getElementById('notarisBien').textContent = price.toLocaleString('fr-BE') + ' €';
+document.getElementById('notarisDroits').textContent = droits.toLocaleString('fr-BE') + ' €';
+document.getElementById('notarisFrais').textContent = frais.toLocaleString('fr-BE') + ' €';
+document.getElementById('notarisTotal').textContent = total.toLocaleString('fr-BE') + ' €';
+}
+
+// ===== INVESTMENT CALCULATOR =====
+function calcInvest() {
+const price = parseInt(document.getElementById('investPrice').value) || 0;
+const rent = parseInt(document.getElementById('investRent').value) || 0;
+const costs = parseInt(document.getElementById('investCosts').value) || 0;
+
+const revenue = rent * 12;
+const netRevenue = revenue - costs;
+const grossYield = price > 0 ? ((revenue / price) * 100).toFixed(2) : '0.00';
+const netYield = price > 0 ? ((netRevenue / price) * 100).toFixed(2) : '0.00';
+
+document.getElementById('investRevenue').textContent = revenue.toLocaleString('fr-BE') + ' €';
+document.getElementById('investCostsResult').textContent = costs.toLocaleString('fr-BE') + ' €';
+document.getElementById('investNetRevenue').textContent = netRevenue.toLocaleString('fr-BE') + ' €';
+document.getElementById('investGrossYield').textContent = grossYield + '%';
+document.getElementById('investNetYield').textContent = netYield + '%';
+}
+
+// ===== FAQ =====
+function toggleFaq(btn) {
+const item = btn.parentElement;
+const isActive = item.classList.contains('active');
+document.querySelectorAll('.faq-item').forEach(i => {
+i.classList.remove('active');
+i.querySelector('.faq-answer').style.maxHeight = '0';
+});
+if(!isActive) {
+item.classList.add('active');
+item.querySelector('.faq-answer').style.maxHeight = item.querySelector('.faq-answer').scrollHeight + 'px';
+}
+}
+
+// ===== MODALS =====
+function openModal(id) {
+document.getElementById(id).classList.add('active');
+document.body.style.overflow = 'hidden';
+}
+
+function closeModal(id) {
+document.getElementById(id).classList.remove('active');
+document.body.style.overflow = '';
+}
+
+document.querySelectorAll('.modal-overlay').forEach(overlay => {
+overlay.addEventListener('click', function(e) {
+if(e.target === this) {
+this.classList.remove('active');
+document.body.style.overflow = '';
+}
+});
+});
+
+// ===== RATING =====
+let currentRating = 0;
+function setRating(rating) {
+currentRating = rating;
+document.querySelectorAll('.rating-star').forEach((star, index) => {
+star.classList.toggle('active', index < rating);
+});
+const texts = ['', 'Très décevant', 'Décevant', 'Moyen', 'Bien', 'Excellent !'];
+document.getElementById('ratingText').textContent = texts[rating];
+}
+
+// ===== FAVORITES =====
+function toggleFavorite(btn) {
+btn.classList.toggle('liked');
+if(btn.classList.contains('liked')) {
+btn.querySelector('svg').style.fill = '#EF4444';
+btn.querySelector('svg').style.color = '#EF4444';
+} else {
+btn.querySelector('svg').style.fill = 'none';
+btn.querySelector('svg').style.color = 'currentColor';
+}
+}
+
+// ===== CHAT =====
+function toggleChat() {
+document.getElementById('chatWidget').classList.toggle('active');
+}
+
+const chatResponses = {
+'accueil': 'Bienvenue chez FENIX Properties ! 🏠 Je peux vous aider avec :\n\n•  Acheter un bien\n•  Louer un bien\n• 💰 Vendre votre bien\n• 📊 Estimation gratuite\n• 💼 Investissement immobilier\n\nQue souhaitez-vous faire ?',
+'acheter': 'Pour acheter un bien à Bruxelles, je vous recommande de :\n\n1. Définir votre budget et critères\n2. Consulter nos biens en vente\n3. Planifier des visites\n4. Obtenir un accord de prêt\n\nSouhaitez-vous voir nos biens disponibles ? ',
+'louer': 'Pour louer un bien, vous aurez besoin de :\n\n📄 Dossier complet (revenus, identité)\n Garantie locative (2-3 mois)\n📝 Contrat de bail\n\nNos biens disponibles sont listés dans notre section Location. Souhaitez-vous des détails ? ',
+'vendre': 'Pour vendre votre bien au meilleur prix :\n\n Photos professionnelles\n🎥 Visite virtuelle\n📊 Analyse de marché\n💼 Accompagnement juridique\n\nDemandez votre estimation gratuite ! 📋',
+'estimer': 'Notre estimation gratuite comprend :\n\n Analyse comparative du marché\n🏠 Visite sur place\n📝 Rapport détaillé\n💬 Conseils personnalisés\n\nRemplissez notre formulaire d\'estimation pour recevoir votre évaluation sous 24h ! 📋',
+'investir': 'Investir à Bruxelles est très attractif ! 📈\n\n Résidentiel : 4-5% rendement\n🎓 Étudiant : 6-7% rendement\n🏢 Immeuble de rapport : 5-6%\n\nConsultez notre simulateur de rentabilité et nos analyses de marché ! 💼',
+'prix': 'Les prix moyens à Bruxelles en 2026 :\n\n Appartement : 4.200 €/m²\n🏡 Maison : 3.800 €/m²\n Centre-ville : jusqu\'à 6.000 €/m²\n\nLes prix varient selon le quartier et le type de bien. Souhaitez-vous des détails sur un quartier spécifique ? 📊',
+'contact': 'Vous pouvez nous contacter :\n\n📞 +32 495 55 99 78\n💬 WhatsApp : wa.me/324955559978\n📍 Quai à la Houille 8, 1000 Bruxelles\n\nOu utilisez notre formulaire de contact ! 📋',
+'credit': 'Pour obtenir un crédit immobilier :\n\n📊 Capacité d\'emprunt : ~30% de vos revenus\n💰 Apport recommandé : 10-20%\n Taux actuels : ~3.5%\n📋 Durée : 20-25 ans\n\nUtilisez notre simulateur pour calculer vos mensualités ! ',
+'default': 'Merci pour votre message ! 😊 Je peux vous aider avec :\n\n• Achat, vente ou location\n• Estimation de bien\n• Investissement immobilier\n• Crédits et financements\n• Droit immobilier belge\n\nQue souhaitez-vous savoir ?'
+};
+
+function sendChat() {
+const input = document.getElementById('chatInput');
+const msg = input.value.trim();
+if(!msg) return;
+
+const messages = document.getElementById('chatMessages');
+messages.innerHTML += `<div class="chat-message user">${msg}</div>`;
+input.value = '';
+
+const lowerMsg = msg.toLowerCase();
+let response = chatResponses.default;
+
+if(lowerMsg.includes('bonjour') || lowerMsg.includes('salut') || lowerMsg.includes('hello')) {
+response = chatResponses.accueil;
+} else if(lowerMsg.includes('acheter') || lowerMsg.includes('achat') || lowerMsg.includes('acheter')) {
+response = chatResponses.acheter;
+} else if(lowerMsg.includes('louer') || lowerMsg.includes('location') || lowerMsg.includes('locatif')) {
+response = chatResponses.louer;
+} else if(lowerMsg.includes('vend') || lowerMsg.includes('vente')) {
+response = chatResponses.vendre;
+} else if(lowerMsg.includes('estim') || lowerMsg.includes('valeur') || lowerMsg.includes('prix')) {
+response = lowerMsg.includes('prix') ? chatResponses.prix : chatResponses.estimer;
+} else if(lowerMsg.includes('invest') || lowerMsg.includes('rendement') || lowerMsg.includes('rentabilit')) {
+response = chatResponses.investir;
+} else if(lowerMsg.includes('contact') || lowerMsg.includes('téléphone') || lowerMsg.includes('appel')) {
+response = chatResponses.contact;
+} else if(lowerMsg.includes('crédit') || lowerMsg.includes('credit') || lowerMsg.includes('prêt') || lowerMsg.includes('pret') || lowerMsg.includes('mensualit')) {
+response = chatResponses.credit;
+}
+
+setTimeout(() => {
+messages.innerHTML += `<div class="chat-message bot">${response.replace(/\n/g, '<br>')}</div>`;
+messages.scrollTop = messages.scrollHeight;
+}, 800);
+
+messages.scrollTop = messages.scrollHeight;
+}
+
+// ===== PROPERTY MODAL =====
+const properties = [
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/149ee8ac5-23e7-48fc-b24f-1ddf509ee21c.png',
+price: '485.000 €',
+title: 'Appartement 3 chambres - Vue panoramique',
+location: 'Bruxelles Centre, 1000',
+rooms: '3',
+area: '145 m²',
+energy: 'A+',
+monthly: '2.250 €',
+desc: 'Superbe appartement de 145 m² situé au 5ème étage avec vue panoramique sur Bruxelles. Entièrement rénové avec des matériaux haut de gamme, il dispose de 3 chambres spacieuses, d\'un salon lumineux, d\'une cuisine équipée et de 2 salles de bains. Chauffage central, double vitrage, ascenseur.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1aa1b5f4a-c7cb-4da0-9f4c-7aa63a725038.png',
+price: '1.250.000 €',
+title: 'Penthouse avec terrasse - Vue Grand Place',
+location: 'Bruxelles Centre, 1000',
+rooms: '4',
+area: '220 m²',
+energy: 'A',
+monthly: '5.800 €',
+desc: 'Penthouse d\'exception de 220 m² avec terrasse de 60 m² offrant une vue imprenable sur la Grand Place. 4 chambres, 3 salles de bains, cuisine américaine équipée, domotique intégrée, parking double. Finitions luxueuses et matériaux nobles.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/19ec6e865-8bdc-4f61-a874-761755aa3ffb.png',
+price: '320.000 €',
+title: 'Duplex moderne - Quartier Dansaert',
+location: 'Dansaert, 1000',
+rooms: '2',
+area: '95 m²',
+energy: 'B',
+monthly: '1.480 €',
+desc: 'Charmant duplex de 95 m² au cœur du quartier branché de Dansaert. Rénové avec goût, il offre un salon double hauteur, 2 chambres, cuisine ouverte et terrasse. Idéal pour un couple ou investissement locatif.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/132070b82-4716-4c53-b245-c6f0741e18b1.png',
+price: '750.000 €',
+title: 'Loft d\'architecte - Sablon',
+location: 'Sablon, 1000',
+rooms: '3',
+area: '180 m²',
+energy: 'A+',
+monthly: '3.480 €',
+desc: 'Loft exceptionnel de 180 m² signé par un architecte renommé, situé dans le prestigieux quartier du Sablon. Espace de vie ouvert, hauteur sous plafond de 4m, baies vitrées, 3 chambres en mezzanine. Pièce unique.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/17af25317-809a-4e9e-8bf6-158d9d325adf.png',
+price: '185.000 €',
+title: 'Studio rénové - Porte de Namur',
+location: 'Porte de Namur, 1000',
+rooms: '1',
+area: '55 m²',
+energy: 'B+',
+monthly: '860 €',
+desc: 'Studio spacieux de 55 m² entièrement rénové, idéalement situé près de la Porte de Namur. Cuisine équipée, salle de bains moderne, nombreux rangements. Parfait pour un premier achat ou investissement locatif.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1f5ab1bcc-ce6a-4325-8b38-a974bdca6537.png',
+price: '680.000 €',
+title: 'Maison avec jardin - Ixelles',
+location: 'Ixelles, 1050',
+rooms: '4',
+area: '210 m²',
+energy: 'A',
+monthly: '3.150 €',
+desc: 'Belle maison de 210 m² avec jardin de 80 m² dans le quartier prisé d\'Ixelles. 4 chambres, 2 salles de bains, cuisine équipée, cave. Rénovation récente, isolation performante. Proche de toutes commodités.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/1d342f072-6ed0-43d8-870b-29391419cadc.png',
+price: '1.450 €/mois',
+title: 'Appartement 2 chambres - Meublé',
+location: 'Saint-Gilles, 1060',
+rooms: '2',
+area: '85 m²',
+energy: 'B',
+monthly: 'Location',
+desc: 'Bel appartement meublé de 85 m² dans le quartier dynamique de Saint-Gilles. 2 chambres, salon lumineux, cuisine équipée, balcon. Disponible immédiatement. Charges comprises.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/199c9672a-089a-4cfb-b021-d3d66354e697.png',
+price: '950 €/mois',
+title: 'Studio meublé - Proche ULB',
+location: 'Ixelles, 1050',
+rooms: '1',
+area: '45 m²',
+energy: 'B+',
+monthly: 'Location',
+desc: 'Studio meublé de 45 m² idéalement situé près de l\'ULB. Cuisine équipée, salle de bains moderne, internet inclus. Parfait pour étudiant ou jeune professionnel. Disponible immédiatement.'
+},
+{
+image: 'https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13e7a6113-7ad0-453c-9b1d-2905f08aadf2.png',
+price: '2.200 €/mois',
+title: 'Maison 4 chambres avec jardin',
+location: 'Woluwe, 1150',
+rooms: '4',
+area: '160 m²',
+energy: 'B',
+monthly: 'Location',
+desc: 'Spacieuse maison de 160 m² avec jardin de 100 m² à Woluwe. 4 chambres, 2 salles de bains, garage, cuisine équipée. Quartier résidentiel calme, proche des écoles et transports.'
+}
+];
+
+function openPropertyModal(index) {
+const p = properties[index];
+document.getElementById('modalPropertyImage').src = p.image;
+document.getElementById('modalPropertyPrice').textContent = p.price;
+document.getElementById('modalPropertyTitle').textContent = p.title;
+document.getElementById('modalPropertyLocation').textContent = p.location;
+document.getElementById('modalPropertyRooms').textContent = p.rooms;
+document.getElementById('modalPropertyArea').textContent = p.area;
+document.getElementById('modalPropertyEnergy').textContent = p.energy;
+document.getElementById('modalPropertyMonthly').textContent = p.monthly;
+document.getElementById('modalPropertyDesc').textContent = p.desc;
+openModal('propertyModal');
+}
+
+// ===== BLOG TABS =====
+function switchBlogTab(el, category) {
+document.querySelectorAll('.tabs .tab').forEach(t => t.classList.remove('active'));
+el.classList.add('active');
+}
+
+// ===== SCROLL ANIMATIONS =====
+function initAnimations() {
+const observer = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if(entry.isIntersecting) {
+entry.target.classList.add('visible');
+}
+});
+}, { threshold: 0.1, rootMargin: '0px 0px -50px 0px' });
+
+document.querySelectorAll('.animate-on-scroll').forEach(el => {
+observer.observe(el);
+});
+
+// Counter animation
+document.querySelectorAll('.stat-number[data-count]').forEach(el => {
+observer.observe(el);
+el.addEventListener('transitionend', function animate() {}, { once: true });
+});
+}
+
+// Counter animation
+const counterObserver = new IntersectionObserver((entries) => {
+entries.forEach(entry => {
+if(entry.isIntersecting) {
+const el = entry.target;
+const target = parseInt(el.dataset.count);
+let current = 0;
+const increment = target / 60;
+const timer = setInterval(() => {
+current += increment;
+if(current >= target) {
+current = target;
+clearInterval(timer);
+}
+el.textContent = Math.round(current).toLocaleString('fr-BE');
+}, 20);
+counterObserver.unobserve(el);
+}
+});
+}, { threshold: 0.5 });
+
+document.querySelectorAll('.stat-number[data-count]').forEach(el => {
+counterObserver.observe(el);
+});
+
+// ===== INIT =====
+document.addEventListener('DOMContentLoaded', function() {
+initAnimations();
+updateSimulator();
+calcNotaris();
+calcInvest();
+
+// Show desktop call button on larger screens
+if(window.innerWidth > 1024) {
+document.getElementById('desktopCall').style.display = 'inline-flex';
+}
+});
+
+// Handle resize
+window.addEventListener('resize', function() {
+if(window.innerWidth > 1024) {
+document.getElementById('desktopCall').style.display = 'inline-flex';
+} else {
+document.getElementById('desktopCall').style.display = 'none';
+}
+});
+</script>
+
+<script type="application/ld+json">
+{
+"@context": "https://schema.org",
+"@type": "RealEstateAgent",
+"name": "FENIX Properties",
+"address": {
+"@type": "PostalAddress",
+"streetAddress": "Quai à la Houille 8",
+"addressLocality": "Bruxelles",
+"postalCode": "1000",
+"addressCountry": "BE"
+},
+"telephone": "+32495559978",
+"areaServed": "Bruxelles",
+"priceRange": "€€€",
+"image": "https://image.qwenlm.ai/public_source/855a57bd-a30d-48ca-b59c-10d36d9535be/13c9dba3e-8a31-4382-9eaa-507759b99244.png",
+"aggregateRating": {
+"@type": "AggregateRating",
+"ratingValue": "4.9",
+"reviewCount": "127"
+}
+}
+</script>
+</body>
+</html>
+
